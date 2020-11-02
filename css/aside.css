@@ -1,10 +1,10 @@
 aside {
-    border-right: 1px solid #A5A5B1;
+    border-right: 2px solid #A5A5B1;
     /* height: calc(100% - 60px); */
     max-width: 230px;
     width: 230px;
     background-color: #F0F0F0;
-    /* background-color:#01514B; */
+    background-color:white;
     padding: 10px 0px;
     text-decoration: none;
     animation-duration: 1s;  
