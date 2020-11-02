@@ -1,0 +1,36 @@
+.cards-cont{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-item{
+    background-color: white;
+    width: 31.5%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    
+}
+
+.card-item .card-titulo{
+  background-color: rgb(85,189,146);
+  color: white;
+  border-radius: 5px 5px 0px 0px;
+  text-transform: uppercase;
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 1.4rem;
+
+}
+
+.card-item .card-corpo{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 1.5px solid rgb(220, 220, 220);
+}
+.card-item .card-pe{
+    border: 1.5px solid rgb(220, 220, 220);
+    padding: 5px;
+}

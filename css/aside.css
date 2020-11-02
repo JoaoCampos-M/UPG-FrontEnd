@@ -1,0 +1,135 @@
+aside {
+    border-right: 1px solid #A5A5B1;
+    /* height: calc(100% - 60px); */
+    max-width: 230px;
+    width: 230px;
+    background-color: #F0F0F0;
+    /* background-color:#01514B; */
+    padding: 10px 0px;
+    text-decoration: none;
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;
+}
+
+@keyframes reduzirAside{
+  from{
+    max-width: 230px;
+    }
+  to {
+     max-width: 80px;
+    }
+}
+/* The element to apply the animation to */
+
+@keyframes aumentarAside{
+    from{
+        max-width: 80px;
+    }
+    to{
+        max-width: 230px;
+    }
+}
+aside a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.div-menu-alt{
+    width: min(100%,230px);
+}
+
+.div-menu-alt a{
+    /* background-color: purpl  e; */
+    width: min(100%,230px);
+    padding: 5px;
+    display: flex;
+}
+
+.div-menu-alt:hover{
+    background-color:#55BD92;
+    color:white;
+}
+
+.div-menu-alt p{
+    right: 0px;
+    float: right;
+    margin:auto auto;
+    float: right;
+    text-align: center;
+}
+
+.div-menu-alt .menu-toggle{
+    display: none;
+}
+
+
+
+ul{
+    list-style: none;
+    width: 100%;
+    display: block;
+}
+
+aside ul li{
+    /* border-top:1px solid #BFBFCB;; */
+    /* border-bottom: 1px solid #BFBFCB; */
+    /* background-color: white; */
+    display: flex;
+    margin: 20px 0px;
+    padding: 5px;
+}
+
+aside ul li:hover {
+   background-color:#55BD92;
+}
+
+aside ul li:hover > a{
+    color:white;
+}
+
+aside ul li a{
+    /* background-color: blue; */
+    width: min(100%,230px);
+    display: flex;
+}
+
+
+.menu-lateral-div{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-lateral-icones{
+    height: 48px;
+}
+
+aside p{
+    right: 0px;
+    float: right;
+    margin:auto auto;
+    float: right;
+    text-align: center;
+    display: block;
+}
+@keyframes mostrarP{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes ocultarP{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.auto-margin{
+    margin: auto;
+}

@@ -1,0 +1,131 @@
+section{
+    width: 100%;
+    padding: 30px 20px;
+}
+
+section .noticias{
+    max-width: 1080px;
+    display: flex;
+    margin: 15px auto;
+}
+
+.noticias .carousel{
+    height:500px ;
+    max-height: 500px;
+    width: 720px;
+}
+
+.noticias .carousel .carousel-item{
+    height: 500px;
+    max-height: 500px;
+}
+
+.noticias .carousel img{
+    width:100%;
+    min-height: 100%;
+}
+.noticias .carousel .carousel-caption{
+    background-color: white;
+    color: black;;
+}
+
+.noticias .carousel .carousel-caption h5{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.noticias .noticias-fila{
+    padding:0px 5px;
+    width: 360px;
+
+    height: 500px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+.noticias .noticias-fila .noticia-iten{
+    background-color: white;
+    max-height: 240px;
+    height: 100%;
+    margin: 0;
+    box-shadow: 1px 1px 4px grey;
+    margin-bottom: 5px;
+}
+.noticias .noticia-iten img{
+    max-width: 360px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+}
+::-webkit-scrollbar{
+    width: 2px;
+}
+
+.noticias .noticia-iten h5{
+    margin-block-end: 0px;
+}
+
+@media(max-width:720px){
+    .noticias .noticias-fila{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+}
+
+
+/* CABEÇALHO DA TABELA DE BOLETIN */
+
+
+.cabecalho .boletim-dados{
+    /* background-color: blue; */
+    display: flex;
+}
+.cabecalho .boletim-dados label{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+.cabecalho .boletim-dados p{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cabecalho .boletim-dados select{
+    font-size: 1.2rem;
+    /* background-color: gray; */
+    border: none;
+    border-radius: 4px;
+}
+
+.cabecalho .boletim-dados ul{
+    /* background-color: yellow; */
+}
+
+.cabecalho .boletim-dados ul li, .boletim-medias ul li{
+    display: flex;
+    margin: 4% 0px;
+}
+
+
+.boletim-medias{
+    display: flex;
+}
+.boletim-medias ul{
+    display: flex;
+    margin-top: 40px;
+}
+
+.boletim-medias label{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+.boletim-medias p{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
