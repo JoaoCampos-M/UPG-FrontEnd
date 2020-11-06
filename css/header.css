@@ -34,3 +34,22 @@ header button p{
     text-transform: uppercase;
     margin: auto 8px;
 }
+
+nav{
+    padding: 8px;
+    font-weight: bolder;
+}
+
+.titulo-pagina{
+width: 100%;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+.titulo-pagina img{
+    width: 60px;
+    height: 60px;
+}
+.titulo-pagina h2{
+    font-size: 1.6rem;
+}

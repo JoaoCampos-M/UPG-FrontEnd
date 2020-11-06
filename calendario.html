@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="./css/GlobalStyles.css" />
+    <link rel="stylesheet" href="./css/header.css"/>
+    <link rel="stylesheet" href="./css/aside.css"/>
+    <link rel="stylesheet" href="./css/section.css" >
+    <link rel="stylesheet" href="./css/calendario.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <header>
+        <div class="logo-upg-header">
+            <img class="logo-upg" src="./imagens/logo.jpeg" >
+        </div>
+        <button>
+            <p>Entrar</p>
+            <img src="./imagens/entrar.png" >
+        </button>
+    </header>
+
+
+<div class="container">
+    <aside>
+        <div  id="apenasIcones" class="menu-icones" >
+            <div class="" >
+                <a onclick="revelarMenuAside()">
+                    <img src="./imagens/menu_toggle.png" >   
+                </a>
+            </div>
+            <div>
+                <a href="./boletim.html" >
+                    <img src="./imagens/boletim-icone.png" >
+
+                </a>
+            </div>
+            <div>
+                <a href="./calendario.html" >
+                    <img src="./imagens/calendario-icone.png" >
+
+                </a>
+            </div>
+            <div>
+                <a href="./diario.html" >
+                    <img src="./imagens/diario-icone.png" >
+
+                </a>
+            </div>
+            <div>
+                <a href="./financeiro.html" >
+                    <img src="./imagens/financeiro-icone.webp" >  
+
+                </a>
+            </div>
+            <div>
+                <a href="./horario.html" >
+                    <img src="./imagens/horario-icone.jpg"  >    
+                </a>
+            </div>
+        </div>
+        <div style="display: none;"  id="menuCompleto" class="menu-revelado" >
+            <div class="" >
+                <a onclick="menuCover()"  >
+                    <img src="./imagens/menu_toggle.png" >   
+                    <p >Menu</p> 
+                </a>
+            </div>
+            <div>
+                <a href="./boletim.html" >
+                    <img src="./imagens/boletim-icone.png" >
+                    <p>Boletim</p>
+                </a>
+            </div>
+            <div>
+                <a href="./calendario.html" >
+                    <img src="./imagens/calendario-icone.png" >
+                    <p>Calendário</p>
+                </a>
+            </div>
+            <div>
+                <a href="./diario.html" >
+                    <img src="./imagens/diario-icone.png" >
+                    <p>Diário</p>
+                </a>
+            </div>
+            <div>
+                <a href="./financeiro.html" >
+                    <img src="./imagens/financeiro-icone.webp" >  
+                    <p>Financeiro</p>  
+                </a>
+            </div>
+            <div>
+                <a href="./horario.html" >
+                    <img src="./imagens/horario-icone.jpg"  >    
+                    <p>
+                        horário
+                    </p>
+                </a>
+            </div>
+        </div>
+        
+    </aside>
+    <section>
+        <nav>
+            <a>Inicio > </a>
+            <a>Calendário</a>
+        </nav>
+        <div class="ct">
+            <div class="titulo-pagina">
+                <img src="./imagens/calendario-icone.png" >
+                <h2>Calendário</h2>
+            </div>
+            <div class="cabecalho">
+                <div class="boletim-dados" >
+                    <ul>
+                        <li>
+                            <label>Mês: </label>
+                            <select>
+                                <option> Outubro </option>
+                                <option>Novembro</option>
+                            </select>
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <li>
+                            <label>Ano: </label>
+                            <select>
+                                <option>2019</option>
+                                <option>2020</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <ul>
+         
+                    </ul>
+                </div>
+            </div>
+            <div class="calendario">
+                <div class="tarefas">
+                    <div class="tarefa-item">
+                        <div class="dia">Hoje</div>
+                        <div class="titulo">Prova de Histologia</div>
+                    </div>
+    
+                    <div class="tarefa-item">
+                        <div class="dia">Amanhã</div>
+                        <div class="titulo" style="background-color: green;" onclick="exibirDetalhes(1)" >Dia do Dota</div>
+                        <div class="titulo" style="background-color: purple;" >Dia de não fazer nada</div>
+                    </div>
+    
+                    <div class="tarefa-item">
+                        <div class="dia">15</div>
+                        <div class="titulo" style="background-color: blue;" >Dia do Dota</div>
+                        <div class="titulo" style="background-color: orange;" >Dia de não fazer nada</div>
+                    </div>
+                    <div class="tarefa-item">
+                        <div class="dia">27</div>
+                        <div class="titulo" style="background-color: orangered;" >Dia do Dota</div>
+                        <div class="titulo" style="background-color: purple;" >Dia de não fazer nada</div>
+                    </div>
+                    <div class="tarefa-item">
+                        <div class="dia">Amanhã</div>
+                        <div class="titulo" style="background-color: green;" onclick="exibirDetalhes(1)" >Dia do Dota</div>
+                        <div class="titulo" style="background-color: purple;" >Dia de não fazer nada</div>
+                    </div>                   
+                    <div class="tarefa-item">
+                        <div class="dia">15</div>
+                        <div class="titulo" style="background-color: blue;" >Dia do Dota</div>
+                        <div class="titulo" style="background-color: orange;" >Dia de não fazer nada</div>
+                    </div>
+    
+                </div>
+                <div class="meses">
+                    <div class="mes-linha">
+                        <div class="mes-item">
+                            <div class="mes-nome">
+                                <h5>janeiro</h5>
+                            </div>
+                            <div class="mes-corpo" >
+                                <div>
+                                    <label>Status: </label>
+                                </div>
+                            </div>
+                            <div class="mes-pe" >
+                          
+                            </div>
+                        </div>
+                        <div class="mes-item">
+                            <div class="mes-nome">
+                                <h5>fevereiro</h5>
+                            </div>
+    
+                        </div>
+                        <div class="mes-item">
+                            <div class="mes-nome">
+                                <h5>março</h5>
+                            </div>
+    
+                        </div>
+                        <div class="mes-item">
+                            <div class="mes-nome">
+                                <h5>abril</h5>
+                            </div>
+    
+                        </div>
+                      
+                    </div>
+                    <div class="mes-linha">
+                        <div class="mes-item">
+                            <div class="mes-nome">
+                                <h5>maio</h5>
+                            </div>
+    
+                        </div>
+                        <div class="mes-item">
+                            <div class="mes-nome">
+                                <h5>junho</h5>
+                            </div>
+                            <div class="mes-corpo" >
+                                <div>
+                                    <label>Status: </label>
+                                </div>
+                            </div>
+                            <div class="mes-pe" >
+                                <label>
+                                    8
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mes-item">
+                            <div class="mes-nome">
+                                <h5>julho</h5>
+                            </div>
+                            <div class="mes-corpo" >
+                                <div>
+                                    <label style="background-color: purple ;" >trabalho de ingles: </label>
+                                </div>
+                            </div>
+                            <div class="mes-pe" >
+                                <label>
+                                    1+
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mes-item">
+                            <div class="mes-nome">
+                                <h5>agosto</h5>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="mes-linha">
+                        <div class="mes-item">
+                            <div class="mes-nome">
+                                <h5>setembro</h5>
+                            </div>
+                            <div class="mes-corpo" >
+                                <div>
+                                    <label style="background-color: red;" >Prova: </label>
+                                </div>
+                            </div>
+                            <div class="mes-pe" >
+                                <label>
+                                    3+
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mes-item">
+                            <div class="mes-nome">
+                                <h5>outubro</h5>
+                            </div>
+    
+                        </div>
+                        <div class="mes-item">
+                            <div class="mes-nome">
+                                <h5>novembro</h5>
+                            </div>
+    
+                        </div>
+                        <div class="mes-item">
+                            <div class="mes-nome">
+                                <h5>dezembro</h5>
+                            </div>
+                            <div class="mes-corpo" >
+                                <div>
+                                    <label style="background-color: green;" >Fortnite: </label>
+                                </div>
+                            </div>
+                            <div class="mes-pe" >
+                                <label>
+                                    2+
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+            
+    </section>
+    <div class="tarefa-det-cont" style="display: none;" >
+        <div class="d-t-item" >
+            <div class="detalhe-titulo">
+                <div> 
+                    <img src="./imagens/cancel-24px.svg" onclick="ocultarDetalhes(1)" >
+                </div>
+                <h5>Jogar Dota</h5>
+            </div>
+            <div class="detalhe-corpo"> 
+                <div>
+                    <p> <strong>Inicio:</strong> 27/10/2020 às 07:00 </p>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <div class="menu-mobile mob" style="display: none;"  >
+        <div  class="icones-mob" >
+            <div>
+                <a href="./boletim.html" >
+                    <img src="./imagens/boletim-icone.png" >
+    
+                </a>
+            </div>
+            <div>
+                <a href="./calendario.html" >
+                    <img src="./imagens/calendario-icone.png" >
+    
+                </a>
+            </div>
+            <div>
+                <a href="./diario.html" >
+                    <img src="./imagens/diario-icone.png" >
+    
+                </a>
+            </div>
+            <div>
+                <a href="./financeiro.html" >
+                    <img src="./imagens/financeiro-icone.webp" >  
+    
+                </a>
+            </div>
+            <div>
+                <a href="./horario.html" >
+                    <img src="./imagens/horario-icone.jpg"  >    
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="./js/main.js" ></script>
+    <script src="./js/eventos.js" ></script>
+</body>
+</html>
+</li>

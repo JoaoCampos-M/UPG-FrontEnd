@@ -1,35 +1,30 @@
 const aside = document.getElementsByTagName("aside")[0];
 
-function menuReveal() {
-  aside.style.animationName = "reduzirAside";
-  let p;
-  let quant = aside.getElementsByTagName("p").length;
-  for (let c = 0; c < quant; c++) {
-    p = aside.getElementsByTagName("p")[c];
-    p.style.display = "none";
-  }
+function revelarMenuAside() {
+  let ul = aside.querySelector("#apenasIcones");
+  ul.style.display="none";
+  let div = aside.querySelector("#menuCompleto");
+  div.style.display="flex";
 }
 
 function menuCover() {
-  aside.style.animationName = "aumentarAside";
-  let p;
-  setTimeout(function () {
-    let tam = aside.getElementsByTagName("p").length;
-    for (let c = 0; c < tam; c++) {
-      p = aside.getElementsByTagName("p")[c];
-      p.style.display = "block";
-    }
-  }, 400);
+  let ul = aside.querySelector("#apenasIcones");
+  ul.style.display="flex";
+  let div = aside.querySelector("#menuCompleto");
+  div.style.display="none";
 }
 
-function menuAlternar(elm) {
-  let menu = aside.querySelector("#menu-abg");
-  let menuClass = menu.getAttribute("class");
-  if (menuClass == "desativado") {
-    menuReveal();
-    menu.setAttribute("class", "ativo");
-  } else {
-    menuCover();
-    menu.setAttribute("class", "desativado");
-  }
+var detalhesCont = document.getElementsByClassName('tarefa-det-cont')[0];
+
+
+function exibirDetalhes(det){
+  detalhesCont.style.display="block";
+  let item = detalhesCont.getElementsByClassName('d-t-item')[det];
+  item.style.display="block";
+}
+
+function ocultarDetalhes(det){
+  detalhesCont.style.display="none";
+  let item = detalhesCont.getElementsByClassName('d-t-item')[det];
+  item.style.display="none";
 }

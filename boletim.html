@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/aside.css"/>
     <link rel="stylesheet" href="./css/section.css" >
     <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
     <header>
@@ -20,72 +21,98 @@
             <img src="./imagens/entrar.png" >
         </button>
     </header>
-    <nav></nav>
+
 
     <div class="container">
-    <aside style="display: none;">
-        <div id="menu-abg" class="desativado" >
-            <div class="div-menu-alt" >
-                <a  href="#">
-                    <div class="menu-lateral-div" >
-                        <img class="menu-alt menu-lateral-icones" onclick="menuAlternar(this)" src="./imagens/menu_toggle.png">
-                    </div>
-                    <p>
-                        Menu
-                    </p>
-                </a>
+        <aside>
+            <div  id="apenasIcones" class="menu-icones" >
+                <div class="" >
+                    <a onclick="revelarMenuAside()">
+                        <img src="./imagens/menu_toggle.png" >   
+                    </a>
+                </div>
+                <div>
+                    <a href="./boletim.html" >
+                        <img src="./imagens/boletim-icone.png" >
     
-                <a class="menu-toggle" href="#" >
-                    <img src="./imagens/menu_toggle.png"/>
-                </a>
+                    </a>
+                </div>
+                <div>
+                    <a href="./calendario.html" >
+                        <img src="./imagens/calendario-icone.png" >
+    
+                    </a>
+                </div>
+                <div>
+                    <a href="./diario.html" >
+                        <img src="./imagens/diario-icone.png" >
+    
+                    </a>
+                </div>
+                <div>
+                    <a href="./financeiro.html" >
+                        <img src="./imagens/financeiro-icone.webp" >  
+    
+                    </a>
+                </div>
+                <div>
+                    <a href="./horario.html" >
+                        <img src="./imagens/horario-icone.jpg"  >    
+                    </a>
+                </div>
             </div>
-            <ul>
-                <li>
-                    <a href="">
-                        <div class="menu-lateral-div" >
-                            <img class="menu-lateral-icones" src="./imagens/matricula.png">
-                        </div>
-                        <p>Matricule-se</p>
+            <div style="display: none;"  id="menuCompleto" class="menu-revelado" >
+                <div class="" >
+                    <a onclick="menuCover()"  >
+                        <img src="./imagens/menu_toggle.png" >   
+                        <p >Menu</p> 
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="menu-lateral-div" >
-                            <img class="menu-lateral-icones" src="./imagens/noticias.png">
-                        </div>
-                        <p>Notícias</p>
+                </div>
+                <div>
+                    <a href="./boletim.html" >
+                        <img src="./imagens/boletim-icone.png" >
+                        <p>Boletim</p>
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="menu-lateral-div" >
-                            <img class="menu-lateral-icones" src="./imagens/sobreaupg.png">
-                        </div>
-                        <p>Sobre a UPG</p>
+                </div>
+                <div>
+                    <a href="./calendario.html" >
+                        <img src="./imagens/calendario-icone.png" >
+                        <p>Calendário</p>
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="menu-lateral-div" >
-                            <img class="menu-lateral-icones" src="./imagens/contato.png">
-                        </div>
-                        <p>Fale conosco</p>
+                </div>
+                <div>
+                    <a href="./diario.html" >
+                        <img src="./imagens/diario-icone.png" >
+                        <p>Diário</p>
                     </a>
-                </li>
-                <li>
-                    <a href="" >
-                        <div class="menu-lateral-div" >
-                            <img class="menu-lateral-icones" src="./imagens/duvidas.png">
-                        </div>
-                        <p>Dúvidas</p>
+                </div>
+                <div>
+                    <a href="./financeiro.html" >
+                        <img src="./imagens/financeiro-icone.webp" >  
+                        <p>Financeiro</p>  
                     </a>
-                </li>
-            </ul>
-        </div>
-
-    </aside>
+                </div>
+                <div>
+                    <a href="./horario.html" >
+                        <img src="./imagens/horario-icone.jpg"  >    
+                        <p>
+                            horário
+                        </p>
+                    </a>
+                </div>
+            </div>
+            
+        </aside>
     <section>
-        <div class="cabecalho">
+        <nav>
+            <a>Inicio > </a>
+            <a>Boletim</a>
+        </nav>
+        <div class="ct">        <div class="cabecalho">
+            <div class="titulo-pagina">
+                <img src="./imagens/boletim-icone.png" >
+                <h2>Boletim</h2>
+            </div>
             <div class="boletim-dados" >
                 <ul>
                     <li>
@@ -186,7 +213,7 @@
 
             </ul>
 
-        </div>
+        </div></div>
        
     </section>
 </div>

@@ -1,8 +1,10 @@
 section{
     width: 100%;
-    padding: 30px 20px;
 }
 
+section .ct{
+    padding: 20px 20px;
+}
 section .noticias{
     max-width: 1080px;
     display: flex;
@@ -64,22 +66,11 @@ section .noticias{
     margin-block-end: 0px;
 }
 
-@media(max-width:720px){
-    .noticias .noticias-fila{
-        display: none;
-    }
-    aside{
-        display: none;
-    }
-}
-
-
 /* CABEÇALHO DA TABELA DE BOLETIN */
-
-
 .cabecalho .boletim-dados{
     /* background-color: blue; */
     display: flex;
+    justify-content: space-between;
 }
 .cabecalho .boletim-dados label{
     font-weight: bold;
@@ -100,15 +91,10 @@ section .noticias{
     border-radius: 4px;
 }
 
-.cabecalho .boletim-dados ul{
-    /* background-color: yellow; */
-}
-
 .cabecalho .boletim-dados ul li, .boletim-medias ul li{
     display: flex;
-    margin: 4% 0px;
+    margin: 15px 0px;
 }
-
 
 .boletim-medias{
     display: flex;

@@ -1,0 +1,20 @@
+@media(max-width:720px){
+    nav{
+        display: none;
+    }
+    .noticias .noticias-fila{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    .calendario {
+        display: block;
+    }
+    .calendario .tarefas{
+        width: 100%;
+    }
+    .mob{
+        display: none;
+    }
+}

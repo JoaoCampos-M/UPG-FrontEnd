@@ -32,3 +32,10 @@ table tr.tabela-h th{
     text-transform: uppercase;
     /* border: 1px solid #01514B; */
 }
+
+
+.horario-h{
+    color: white;
+    background-color: #C4C4C4;
+    font-weight: bold;
+} 

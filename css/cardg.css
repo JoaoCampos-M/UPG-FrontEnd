@@ -1,0 +1,92 @@
+.card-g{
+    border: 2px solid #c1c1c1;
+}
+
+.card-g .card-g-titulo{
+    background-color: #55BD92;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.card-g .card-g-corpo{
+    height: 400px;
+}
+
+.card-g .card-g-corpo .card-g-e{
+    width: 50%;
+    float: left;
+    height: 100%;
+    border-right: 1px solid #c1c1c1;
+}
+
+.card-g .card-g-corpo .card-g-d{
+    float: right;
+    width: 50%;;
+    padding: 20px;
+    height: 100%;
+    border-left: 1px solid #c1c1c1;
+}
+
+.card-g-corpo h5{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.card-g-e .card-g-t{
+    height: 50%;
+    border-bottom: 1px solid #c1c1c1;
+    padding: 20px;
+}
+.card-g-e .card-g-b{
+    height: 50%;
+    border-top:1px solid #c1c1c1;
+    padding: 20px;
+}
+
+.material-item{
+    background-color: #F6F6F6;
+    border: 2px solid #c1c1c1;
+    display: flex;
+    border-radius: 10px;
+}
+
+.material-item .material-links{
+    border-right: 1px solid #c1c1c1;
+    width: 50%;
+    padding: 10px;
+}
+
+.material-links ul{
+    list-style: none;
+}
+.material-links li{
+    margin-bottom: 8px;
+}
+
+.material-links li::before {
+    content: "*"; /* Insert content that looks like bullets */
+    padding-right: 3px;
+    color: blue; /* Or a color you prefer */
+}
+
+.material-links a{
+    color: black;
+    text-decoration: underline;
+}
+
+.material-item .material-sobre{
+    width: 50%;
+    border-left: 1px solid #c1c1c1;
+    padding: 10px;
+}
+.material-sobre p{
+    font-size: 1rem;
+    padding: 8px;
+}
+.material-item .links-titulo{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
