@@ -197,4 +197,10 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 }
+
+p:hover{
+  color:#01A54F;
+  transition-duration: 0.7s;
+} 
