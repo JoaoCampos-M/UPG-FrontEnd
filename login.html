@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim</title>
+    <link rel="stylesheet" href="./css/GlobalStyles.css" />
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/header.css"/>
+    <link rel="stylesheet" href="./css/section.css" >
+    <link rel="stylesheet" href="./css/media.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo-upg-header">
+            <img class="logo-upg" src="./imagens/logo.jpeg" >
+        </div>
+        <button>
+            <p>Entrar</p>
+            <img src="./imagens/entrar.png" >
+        </button>
+    </header>
+
+    <div class="login-cont">
+        <form>
+            <div class="login-form-img" >
+                <img src="./imagens/login-form.png" > 
+            </div>
+          <div class="input-field">
+            <input type="text" required>
+            <label>Usuario</label>
+          </div>
+          <div class="input-field">
+            <input class="pswrd" type="password" required>
+            <span class="show">MOSTRAR</span>
+            <label>Senha</label>
+          </div>
+          <div class="form-save-user">
+            
+            <label class="switch">
+                <input id="salvar-us" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+              <p>Salvar Usuário</p>
+          </div>
+          <div class="form-buttons">
+              <p><a>Esqueci a senha</a></p>
+            <button>Entrar</button>
+          </div>
+        </form>
+      </div>
+      <script>
+        var input = document.querySelector('.pswrd');
+        var show = document.querySelector('.show');
+        show.addEventListener('click', active);
+        function active(){
+          if(input.type === "password"){
+            input.type = "text";
+            show.style.color = "gray";
+            show.textContent = "OCULTAR";
+          }else{
+            input.type = "password";
+            show.textContent = "MOSTRAR";
+            show.style.color = "#111";
+          }
+        }
+
+        let b = document.querySelector('.switch');
+
+        b.onclick = function(){
+            let a = document.querySelector('#salvar-us'); 
+            if(a.checked==true){
+                a.checked=false
+            }else{
+                a.checked=true
+            }
+        }
+
+      </script>
+    <script src="./js/main.js" ></script>
+    <script src="./js/eventos.js" ></script>
+</body>
+</html>
+</li>
