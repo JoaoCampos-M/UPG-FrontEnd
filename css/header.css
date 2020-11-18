@@ -14,23 +14,31 @@ header .logo-upg-header{
 header .logo-upg-header img{
     height: min(60px,100%);
 }
-header button{
-   /* *Alinha button verticalmente no centro do header */   
+header a{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+   /* *Alinha a verticalmente no centro do header */   
     margin: auto 5px;
     padding: 0px;
     max-height: 45px;
     display: flex;
+    justify-content: space-between;
+    width: 190px;
     
 }
-header button img{
-    float: right;
+header a::foc{
+    border: none;
+    background-color: red;
+}
+header a img{
     max-width: 52px;
     max-height: 44px;
 }
 
-header button p{
+header a p{
     text-align: justify;
-    float: left;
     text-transform: uppercase;
     margin: auto 8px;
 }
@@ -52,4 +60,66 @@ margin-bottom: 20px;
 }
 .titulo-pagina h2{
     font-size: 1.6rem;
+}
+.home-navbar{
+
+    width: 100%;
+    box-shadow: 0.5px 0.5px 4px #d1d1d1;
+}
+
+.home-navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.home-navbar ul li{
+    padding: 6px 25px;
+    border-left: 1px solid #c1c1c1;
+    /* border-radius: 5px; */
+}
+.home-navbar ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+.home-navbar ul li p{
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+}
+.home-navbar ul li label{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login-box{
+    box-shadow: 1px 1px 2px #c1c1c1;
+    border-radius: 5px;
+    top: 50px;
+    right: 7px;
+    position: absolute;
+    width: 150px;
+    height: auto;
+    background-color: white;
+}
+
+.login-box img{
+    width: 48px;
+    height: 48px;
+}
+
+.login-box div{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-box a div p{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
 }

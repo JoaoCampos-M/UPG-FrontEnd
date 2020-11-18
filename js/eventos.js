@@ -11,3 +11,13 @@
 //         menuAlternar(mb);
 //     });
 // }
+
+function exibir(idElm){
+    let elm = document.querySelector("#"+idElm);
+    elm.style.display="block";
+}
+
+function fechar(idElm){
+    let elm = document.querySelector("#"+idElm);
+    elm.style.display="none";
+}
