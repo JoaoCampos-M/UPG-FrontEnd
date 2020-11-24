@@ -54,3 +54,9 @@ div.container{
 a:hover{
   text-decoration: none;
 }
+
+.flex-linha{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
