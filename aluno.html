@@ -11,20 +11,160 @@
     <link rel="stylesheet" href="./css/aside.css"/>
     <link rel="stylesheet" href="./css/section.css" >
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet"  href="./css/cards.css" >
+    <style>
+        aside{
+            width: 75px;
+            position: absolute;
+            left: 0px;
+        }
+        section{
+            margin-left: 75px;
+        }
+        #aluno-not-car .carousel-inner{
+            position: initial;
+        }
+        #aluno-not-car .carousel-item{
+            position: initial;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <div class="logo-upg-header">
             <img class="logo-upg" src="./imagens/logo.jpeg" >
         </div>
         <a>
+
+            <img src="./imagens/user.png" >
             <p>Entrar</p>
-            <img src="./imagens/entrar.png" >
         </a>
     </header>
 
 
 <div class="container">
+
+    <section>
+        <nav>
+            <a>Inicio > </a>
+            <a>Página do Aluno</a>
+        </nav>
+        <div class="ct">
+            <div class="titulo-pagina">
+                <img src="./imagens/calendario-icone.png" >
+                <h2>Bem Vindo</h2>
+            </div>
+        </div>
+        <div class="aluno-ct"  > 
+            <div class="conteudo" >
+                <div id="aluno-not-car" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./imagens/banner6.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./imagens/banner5.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./imagens/banner4.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#aluno-not-car" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#aluno-not-car" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+                  <div class="bloc-links" >
+                    <div class="bloc-row" >
+                        <div class="bloc-item">
+                            <img src="./imagens/banner6.png" >
+                        </div>
+                        <div class="bloc-item">
+                            <img src="./imagens/banner4.png" >
+                        </div>
+                    </div>
+                    <div class="bloc-row">
+                        <div class="bloc-item">
+                            <img src="./imagens/banner3.png" >
+                        </div>
+                        <div class="bloc-item">
+                            <img src="./imagens/banner5.png" >
+                        </div>
+                    </div>
+                  </div>
+
+                    <div class="card-d-cont">
+                        <div class="card-dados">
+                            <div class="card-d-titulo">
+                                Dados do aluno
+                            </div>
+                            <div class="card-d-corpo">
+                                <div>  
+                                    <div >
+                                        <label>Discente:</label><p>(Inserir dados aqui)</p>
+                                    </div>
+                                    <div >
+                                        <label>Curso:</label><p>(Inserir dados aqui)</p>
+                                    </div>
+                                    <div >
+                                        <label>Matrícula:</label><p>(Inserir dados aqui)</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label>Semestre Atual:</label><p>(Inserir dados aqui)</p>
+                                    </div>
+                                    <div >
+                                        <label>Status da Matrícula:</label><p>(Inserir dados aqui)</p>
+                                    </div>
+                                    <div >
+                                        <label>Disciplinas Matriculadas:</label><p>(Inserir dados aqui)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="novidades" >
+                <div class="card-novidades">
+                    <div class="card-n-titulo" >Novidades</div>
+                    <div class="card-n-corpo" >
+                        <div class="novidade-item">
+                            <h4>Novo Material</h4>
+                            <div class="novidade-info flex-linha " > 
+                                <div class="flex-linha">
+                                    <label>Disciplina: </label><p>Histologia</p>
+                                </div>
+                                <div class="flex-linha" >
+                                    <label>Data:</label><p>21/21/21</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="novidade-item">
+                            <h4>Novo Material</h4>
+                            <div class="novidade-info flex-linha " > 
+                                <div class="flex-linha">
+                                    <label>Disciplina: </label><p>Histologia</p>
+                                </div>
+                                <div class="flex-linha" >
+                                    <label>Data:</label><p>21/21/21</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </section>
     <aside>
         <div  id="apenasIcones" class="menu-icones" >
             <div class="" >
@@ -104,64 +244,6 @@
         </div>
         
     </aside>
-    <section>
-        <nav>
-            <a>Inicio > </a>
-            <a>Calendário</a>
-        </nav>
-        <div class="ct">
-            <div class="titulo-pagina">
-                <img src="./imagens/calendario-icone.png" >
-                <h2>Bem Vindo</h2>
-            </div>
-        </div>
-        <div class="aluno-ct"  > 
-            <div class="conteudo" >
-                <div id="aluno-not-car" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./imagens/banner4.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./imagens/banner5.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./imagens/banner6.png" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#aluno-not-car" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#aluno-not-car" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-
-                  <div class="bloc-links" >
-                    <div class="bloc-row" >
-                        <div class="bloc-item">
-                            <img src="./imagens/banner6.png" >
-                        </div>
-                        <div class="bloc-item">
-                            <img src="./imagens/banner4.png" >
-                        </div>
-                    </div>
-                    <div class="bloc-row">
-                        <div class="bloc-item">
-                            <img src="./imagens/banner3.png" >
-                        </div>
-                        <div class="bloc-item">
-                            <img src="./imagens/banner5.png" >
-                        </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="novidades" >as</div>
-        </div>
-            
-    </section>
     <div class="menu-mobile mob" style="display: none;"  >
         <div  class="icones-mob" >
             <div>

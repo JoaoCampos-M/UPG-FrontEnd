@@ -33,9 +33,51 @@ table tr.tabela-h th{
     /* border: 1px solid #01514B; */
 }
 
-
 .horario-h{
     color: white;
     background-color: #C4C4C4;
     font-weight: bold;
-} 
+}
+
+.tabela-horário-prof{
+    width: 100%;  
+}
+
+.tabela-horário-prof table{
+    width: 100%;
+    background-color: white; 
+    border: 2px solid #d9d9d9;  
+    border-spacing: 0px;
+}
+
+.tabela-horário-prof table .t-h-titulo{
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color: #01514B;
+    color:white;
+    font-weight: bold;
+}
+
+.t-h-titulo th{
+    padding: 8px;
+}
+
+.tabela-horário-prof table tr{
+    background-color: green;
+}
+.tabela-horário-prof table td{
+    padding: 10px 0px;
+    background-color: white;
+    margin: 0;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+}
+
+.tabela-horário-prof table td div{
+    background-color: purple;
+    padding: 8px 5px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+}
+
+
