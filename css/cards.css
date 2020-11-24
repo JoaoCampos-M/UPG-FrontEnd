@@ -46,3 +46,137 @@
     color:#F7CE41;
     padding: 15px;
 }
+
+
+.card-novidades{
+    background-color: white;
+
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+}
+.card-n-titulo{
+    background-color: #F7CE41;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 15px 0px;
+    font-weight: bold;
+}
+
+.card-n-corpo{
+    padding: 10px;
+}
+
+.card-n-corpo .novidade-item{
+    padding: 10px 5px;
+    border-bottom: 1px solid #c1c1c1;
+    margin-bottom: 10px;
+
+}
+
+.card-n-corpo .novidade-item h4{
+    font-size: 1rem;
+}
+
+.novidade-item .novidade-info label{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+
+.card-d-cont{
+    margin-top: 20px;
+    padding: 10px;
+}
+.card-dados{
+    background-color: white;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+}
+
+.card-dados .card-d-titulo{
+    font-size: 1.1rem;
+    padding: 10px;
+    text-align: center;
+    background-color: #3682F3;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.card-dados .card-d-corpo{
+    font-size: 1rem;
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-d-corpo label{
+    font-weight: bold;
+    margin-right: 5px;
+}
+.card-d-corpo div div{
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.card-turmas{
+    padding: 0px 5px;
+
+}
+.card-turmas .card-t-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-turmas .card-t-item{
+    background-color: white;
+    width: 32%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 2px solid rgb(220, 220, 220);
+    padding: 0;
+}
+.card-t-titulo{
+    padding: 15px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #01514B;
+}
+.card-turmas .card-t-corpo{
+    background-color: #55BD92;
+    color: white;
+    padding: 10px 20px;
+}
+.card-t-corpo a{
+    color: white;
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 20px 0px;
+}
+.card-t-item .card-t-pe{
+    font-size: 1rem;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-t-item .card-t-pe p{
+    text-align: center;
+}
+.card-t-pe label{
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.card-t-pe div{
+    display: flex;
+}
+.novidade-item div.novidade-titulo{
+    font-size: 1.1rem;
+}
