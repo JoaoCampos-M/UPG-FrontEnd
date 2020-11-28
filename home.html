@@ -20,6 +20,7 @@
             width: 100%;
             margin:0;
             padding: 0;
+            margin-top:115px;
         }
     </style>
 </head>
@@ -29,8 +30,8 @@
         <div class="logo-upg-header">
             <img class="logo-upg" src="./imagens/logo.jpeg" >
         </div>
-        <a id="button-login-toggle" class="j-0"  >
-            <img src="./imagens/entrar.png" class="j-0" >
+        <a href="./login.html" class="j-0"  >
+            <img style="padding: 5px;"  src="./imagens/user.png" class="j-0" >
             <p class="j-0" >Entrar</p>
         </a>
         
@@ -152,59 +153,13 @@
 
 
     </div>
-    <div id="login-box-home" class="login-box j-0" style="display: none;"  >
-        <a class="j-0" href="./login.html" >
-            <div class="login-aluno j-0" >
-                <img src="./imagens/login-form.png" class="j-0" >
-                <p class="j-0" >Aluno</p>
-            </div>
 
-        </a>
-        <a class="j-0" href="./login.html" > 
-            <div class="login-prof j-0">
-                <img class="j-0" src="./imagens/login-form.png" >
-                <p class="j-0" >Professor</p>
-            </div>
-        </a>    
-    </div>
 
    
     <script src="./js/jquery-3.5.1.slim.min.js" ></script>
     <script src="./js/bootstrap.bundle.min.js" ></script>
 
     <script src="./js/eventos.js" ></script>
-    <script>
-        var achou = false;
-        var a = document.querySelector("#login-box-home");
-        var loginIcon = document.querySelector("#button-login-toggle");
-        loginIcon.addEventListener('click', function () {
-        exibir("login-box-home");
-        achou = true;
-        });
 
-        function notification_click_out_check(target) {
-        var tgClass = target.getAttribute('class');
-        if (tgClass == null) {
-            fechar("login-box-home");
-            achou = false;
-        } else {
-            if ((tgClass.indexOf('j-0')) == (-1)) {
-            fechar("login-box-home");
-            achou = false;
-            }
-        }
-
-        }
-
-        document.body.onclick = function (event) {
-            console.log('chegou aqui');
-            if (achou) {
-                notification_click_out_check(event.target);
-            }
-        }
-
-
-
-    </script>
 </body>
 </html>

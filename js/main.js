@@ -28,3 +28,36 @@ function ocultarDetalhes(det){
   let item = detalhesCont.getElementsByClassName('d-t-item')[det];
   item.style.display="none";
 }
+
+var achou = false;
+var a = document.querySelector("#user-box");
+var userIcon = document.querySelector("#img-user-toggle");
+
+if(userIcon != undefined){
+  userIcon.addEventListener('click', function () {
+    exibir("user-box");
+    achou = true;
+    });    
+}
+
+
+function notification_click_out_check(target) {
+var tgClass = target.getAttribute('class');
+if (tgClass == null) {
+    fechar("user-box");
+    achou = false;
+} else {
+    if ((tgClass.indexOf('j-1')) == (-1)) {
+    fechar("user-box");
+    achou = false;
+    }
+}
+
+}
+
+document.body.onclick = function (event) {
+    console.log('chegou aqui');
+    if (achou) {
+        notification_click_out_check(event.target);
+    }
+}

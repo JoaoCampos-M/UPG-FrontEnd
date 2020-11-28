@@ -17,35 +17,37 @@
             <img class="logo-upg" src="./imagens/logo.jpeg" >
         </div>
     </header>
-
-    <div class="login-cont">
-        <form>
-            <div class="login-form-img" >
-                <img src="./imagens/login-form.png" > 
-            </div>
-          <div class="input-field">
-            <input type="text" required>
-            <label>Usuario</label>
-          </div>
-          <div class="input-field">
-            <input class="pswrd" type="password" required>
-            <span class="show">MOSTRAR</span>
-            <label>Senha</label>
-          </div>
-          <div class="form-save-user">
-            
-            <label class="switch">
-                <input id="salvar-us" type="checkbox">
-                <span class="slider round"></span>
-            </label>
-              <p>Salvar Usuário</p>
-          </div>
-          <div class="form-buttons">
-              <p><a>Esqueci a senha</a></p>
-            <button>Entrar</button>
-          </div>
-        </form>
+<div class="container">
+  <div class="login-cont">
+    <form>
+        <div class="login-form-img" >
+            <img src="./imagens/login-form.png" > 
+        </div>
+      <div class="input-field">
+        <input type="text" required>
+        <label>Usuario</label>
       </div>
+      <div class="input-field">
+        <input class="pswrd" type="password" required>
+        <span class="show">MOSTRAR</span>
+        <label>Senha</label>
+      </div>
+      <div class="form-save-user">
+        
+        <label class="switch">
+            <input id="salvar-us" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+          <p>Salvar Usuário</p>
+      </div>
+      <div class="form-buttons">
+          <p><a>Esqueci a senha</a></p>
+        <button>Entrar</button>
+      </div>
+    </form>
+  </div>
+</div>
+   
       <script>
         var input = document.querySelector('.pswrd');
         var show = document.querySelector('.show');
