@@ -51,17 +51,32 @@ nav{
 }
 
 .titulo-pagina{
+    display: flex;
 width: 100%;
 margin-top: 0px;
 margin-bottom: 20px;
 }
 
+.titulo-pagina .bloc-bem-vindo{
+    width: 15%;
+    margin: auto 0px;
+
+    
+}
+
 .titulo-pagina img{
+    display: block;
+
+    margin: 0px auto;
     width: 60px;
     height: 60px;
 }
 .titulo-pagina h2{
     font-size: 1.6rem;
+    display: block;
+    margin: 5px auto;
+
+    text-align: center;
 }
 .home-navbar{
     margin-top: 50px;
