@@ -59,7 +59,7 @@
     background-color: #F7CE41;
     color:white;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     font-size: 1.1rem;
     padding: 15px 0px;
     font-weight: bold;
@@ -93,6 +93,7 @@
     width: 85%;
 }
 .card-dados{
+    padding: 10px;
     width: 100%;
     background-color: white;
     border: 1px solid #c1c1c1;
@@ -102,7 +103,7 @@
 .card-dados .card-d-titulo{
     font-size: 1.1rem;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     text-transform: capitalize;
     font-weight: bold;
 }
