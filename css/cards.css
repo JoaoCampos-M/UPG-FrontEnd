@@ -50,7 +50,9 @@
 
 .card-novidades{
     background-color: white;
-
+    margin-top: -150px;
+    position: absolute;
+    //display: flex;
     border: 1px solid #c1c1c1;
     border-radius: 5px;
 }
