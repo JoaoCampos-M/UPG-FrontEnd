@@ -10,9 +10,7 @@ section .noticias{
     display: flex;
     margin: 15px auto;
 }
-::-webkit-scrollbar{
-    width: 2px;
-}
+
 /* CABEÇALHO DA TABELA DE BOLETIN */
 .cabecalho .boletim-dados{
     /* background-color: blue; */
