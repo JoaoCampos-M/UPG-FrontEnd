@@ -61,3 +61,33 @@ document.body.onclick = function (event) {
         notification_click_out_check(event.target);
     }
 }
+
+function retomarFocusEfeito(Elm){
+  Elm.addEventListener('focus',function(){
+    Elm.style.border="1.5px solid  #01514B"
+  });
+  Elm.addEventListener('blur',function(){
+    Elm.style.border="1.5px solid  #A5A5B1"
+  });
+  return 0;
+}
+
+function msgErroLogin(){
+  let msg = document.querySelector(".msg-erro-login");
+  msg.style.display="flex";
+
+  let inp1 = document.getElementsByTagName('input')[0];
+  let inp2 = document.getElementsByTagName('input')[1];
+
+  inp1.style.border="1.5px solid red";
+  inp2.style.border="1.5px solid red";
+  
+  setTimeout(function(){
+    msg.style.display="none";
+    inp1.style.border="1.5px solid #A5A5B1";
+    inp2.style.border="1.5px solid #A5A5B1";
+    retomarFocusEfeito(inp1);
+    retomarFocusEfeito(inp2);
+  },1800)
+
+}

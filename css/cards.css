@@ -1,5 +1,4 @@
 .cards-cont{
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -52,6 +51,7 @@
     background-color: white;
     margin-top: -150px;
     position: absolute;
+    /*display: flex;*/
     border: 1px solid #c1c1c1;
     border-radius: 5px;
 }
@@ -87,10 +87,14 @@
 
 
 .card-d-cont{
-    margin-top: 20px;
-    padding: 10px;
+    width: 100%;
+}
+.aluno-dados-inicio{
+    width: 85%;
 }
 .card-dados{
+    padding: 10px;
+    width: 100%;
     background-color: white;
     border: 1px solid #c1c1c1;
     border-radius: 5px;
@@ -99,18 +103,13 @@
 .card-dados .card-d-titulo{
     font-size: 1.1rem;
     padding: 10px;
-    text-align: center;
-    background-color: #3682F3;
-    color: white;
-    text-transform: uppercase;
+    text-align: left;
+    text-transform: capitalize;
     font-weight: bold;
 }
 .card-dados .card-d-corpo{
     font-size: 1rem;
-    display: flex;
     padding: 10px 20px;
-    flex-direction: row;
-    justify-content: space-between;
 }
 .card-d-corpo label{
     font-weight: bold;

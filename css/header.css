@@ -7,6 +7,15 @@ header{
     z-index: 3;
 }
 
+header .header-icones{
+    display: flex;
+    padding: 0px 10px;
+}
+
+.header-icones a{
+    margin: auto 20px auto 0px;   
+    
+}
 header .logo-upg-header{
     height: 100%;
     width: 100%;
@@ -17,25 +26,13 @@ header .logo-upg-header{
 header .logo-upg-header img{
     height: min(60px,100%);
 }
-header a{
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: white;
-    border: none;
-   /* *Alinha a verticalmente no centro do header */   
-    margin: auto 5px;
-    padding: 0px;
-    display: flex;
-    justify-content: space-between;
-    width: 190px;
-    
-}
+
 header a::foc{
     border: none;
     background-color: red;
 }
 header a img{
-    max-width: 52px;
+    max-width: 44px;
     max-height: 44px;
 }
 
@@ -51,17 +48,28 @@ nav{
 }
 
 .titulo-pagina{
-width: 100%;
-margin-top: 0px;
-margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.titulo-pagina .bloc-bem-vindo{
+    width: 15%;
+    margin: auto 0px;    
 }
 
 .titulo-pagina img{
+    display: block;
+    margin: 0px auto;
     width: 60px;
     height: 60px;
 }
 .titulo-pagina h2{
     font-size: 1.6rem;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
 }
 .home-navbar{
     margin-top: 50px;
