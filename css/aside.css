@@ -1,6 +1,6 @@
 aside {
     width: 100%;
-    max-width: 75px;
+    max-width: 65px;
     height: 100vh;
     background-color: orange;
 }
@@ -37,7 +37,7 @@ aside .menu-revelado div a {
 
 }
 aside .menu-revelado div a:hover{
-    background-color: #01514B;
+    background-color: #55bd92;
     transition-duration: 0.35s;
 }
 aside .menu-revelado div a:hover > p{
@@ -57,7 +57,7 @@ aside .menu-revelado div a p{
 }
 
 .menu-revelado div a img{
-    width: 50px;
+    width: 35px;
 }
 
 aside .menu-icones{
@@ -93,7 +93,7 @@ aside .menu-icones div a:hover{
     color: white;
 }
 .menu-icones div a img{
-    width: 50px;
+    width: 35px;
 }
 .menu-mobile{
     background-color: white;
