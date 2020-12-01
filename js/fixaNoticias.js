@@ -1,4 +1,4 @@
-var nav = document.getElementsByTagName('nav')[1];
+var nav = document.querySelector(".card-novidades");
 var topoNav = nav.offsetTop;
 // pega PageYOffset da section
 var sec = document.getElementsByTagName('section')[0];

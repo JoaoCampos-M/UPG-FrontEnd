@@ -1,9 +1,9 @@
 .fixaNovidades{
-    position: fixed;
-    top: 50px;
+    position: absolute;
+    top: 60px;
     right: 10px;
     background-color: red;
-    width: 30%;
+    width: calc(100% - 73.65%);
     margin: 0px;
 }
 
@@ -12,6 +12,8 @@
     border: 1px solid #c1c1c1;
     border-radius: 5px;
     overflow: hidden;
+
+    right: 25px;
 }
 
 .cards-cont{
