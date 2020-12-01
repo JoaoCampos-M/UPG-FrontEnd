@@ -28,6 +28,12 @@
             position: initial;
         }
     </style>
+    <!--<script type="text/javascript">
+        window.onscroll = function(){
+            alert("teste");
+            //fixarMenuNoTopo();
+        }
+    </script>-->    
 </head>
 
 <body>
@@ -49,7 +55,7 @@
 
 <div class="container">
 
-    <section>
+    <section onscroll="debug(event)">
         <nav>
             <a>Inicio > </a>
             <a>Página do Aluno</a>
@@ -98,8 +104,8 @@
                 </div>
             </div>
         </div>
-        <div class="aluno-ct"  > 
-            <div class="conteudo" >
+        <div class="aluno-ct"> 
+            <div class="conteudo">
                 <div id="aluno-not-car" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -141,7 +147,7 @@
                     </div>
                   </div>
             </div>
-            <div class="novidades" >
+            <nav class="novidades" id="nov">
                 <div class="card-novidades">
                     <div class="card-n-titulo" >Novidades</div>
                     <div class="card-n-corpo" >
@@ -157,7 +163,7 @@
                             </div>
                         </div>
 
-                        <nav class="novidade-item">
+                        <div class="novidade-item">
                             <h4>Novo Material</h4>
                             <div class="novidade-info flex-linha " > 
                                 <div class="flex-linha">
@@ -167,10 +173,10 @@
                                     <label>Data:</label><p>21/21/21</p>
                                 </div>
                             </div>
-                        </nav>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </div>
             
     </section>
@@ -311,11 +317,12 @@
             </a>
         </div>
     </div> 
-</div>
+</div>        
     <script src="./js/main.js" ></script>
     <script src="./js/eventos.js" ></script>
     <script src="./js/jquery-3.5.1.slim.min.js" ></script>
     <script src="./js/bootstrap.bundle.min.js" ></script>
+    <script type="text/javascript" src="./js/fixaNoticias.js"></script>
     <script>
         $('.carousel').carousel({
             interval: 5000

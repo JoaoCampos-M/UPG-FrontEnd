@@ -1,3 +1,19 @@
+.fixaNovidades{
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background-color: red;
+    width: 30%;
+    margin: 0px;
+}
+
+.card-novidades{
+    background-color: white;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
 .cards-cont{
     display: flex;
     flex-direction: row;
@@ -46,15 +62,6 @@
     padding: 15px;
 }
 
-
-.card-novidades{
-    background-color: white;
-    margin-top: -150px;
-    position: absolute;
-    /*display: flex;*/
-    border: 1px solid #c1c1c1;
-    border-radius: 5px;
-}
 .card-n-titulo{
     background-color: #F7CE41;
     color:white;
