@@ -26,7 +26,7 @@ body{
 }
 .login-cont{
   margin-top: 50px  ;
-  margin: 30px auto;
+  margin:auto;
   position: relative;
   width: 400px;
   background: white;
@@ -103,15 +103,13 @@ input:valid ~ label{
 }
 
 .form-buttons{
-  margin-top: 10px;
-  display: flex;
   justify-content: space-between;
-  padding: 10px 0px;
 }
 .form-buttons button{
+  height: 50px;
+  width: 100%;
   color: white;
   background-color: #01A54F;
-  padding: 10px 30px;
   border:none;
   border-radius: 5px;
   font-size: 1.2rem;
@@ -119,15 +117,23 @@ input:valid ~ label{
   cursor: pointer;
 }
 .form-buttons p{
-  color: rgb(50, 50, 50);
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  cursor: pointer;
-}
 
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bolder;
+
+}
+.form-buttons p a{
+  color: gray;
+}
+.form-buttons p a:hover{
+  text-decoration: underline;
+}
 .switch {
   position: relative;
   display: inline-block;
