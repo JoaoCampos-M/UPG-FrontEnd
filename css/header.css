@@ -32,8 +32,8 @@ header a::foc{
     background-color: red;
 }
 header a img{
-    max-width: 44px;
-    max-height: 44px;
+    max-width: 36px;
+    max-height: 36px;
 }
 
 header a p{
