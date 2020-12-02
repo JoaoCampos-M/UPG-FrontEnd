@@ -1,210 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diário</title>
     <link rel="stylesheet" href="./css/GlobalStyles.css" />
-    <link rel="stylesheet" href="./css/header.css"/>
-    <link rel="stylesheet" href="./css/aside.css"/>
-    <link rel="stylesheet" href="./css/section.css" >
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/aside.css" />
+    <link rel="stylesheet" href="./css/section.css">
     <link rel="stylesheet" href="./css/cardg.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
+
 <body>
     <header>
         <div class="logo-upg-header">
-            <img class="logo-upg" src="./imagens/logo.jpeg" >
+            <img class="logo-upg" src="./imagens/logo.jpeg">
         </div>
-        <div class="header-icones"  >
+        <div class="header-icones">
             <a>
-                <img src="./imagens/sino.png" >
+                <img src="./imagens/sino.png">
             </a>
-            <a id="img-user-toggle" class="j-1"  >
-                <img src="./imagens/vitao.jpg" class="j-1" >
+            <a id="img-user-toggle" class="j-1">
+                <img src="./imagens/vitao.jpg" class="j-1">
             </a>
         </div>
     </header>
 
     <div class="container">
         <aside>
-            <div  id="apenasIcones" class="menu-icones" >
-                <div class="" >
+            <div id="apenasIcones" class="menu-icones">
+                <div class="">
                     <a onclick="revelarMenuAside()">
-                        <img src="./imagens/menu_toggle.png" >   
+                        <img src="./imagens/menu_toggle.png">
                     </a>
                 </div>
                 <div>
-                    <a href="./boletim.html" >
-                        <img src="./imagens/boletim-icone.png" >
-    
+                    <a href="./boletim.html">
+                        <img src="./imagens/boletim-icone.png">
+
                     </a>
                 </div>
                 <div>
-                    <a href="./calendario.html" >
-                        <img src="./imagens/calendario-icone.png" >
-    
+                    <a href="./calendario.html">
+                        <img src="./imagens/calendario-icone.png">
+
                     </a>
                 </div>
                 <div>
-                    <a href="./diario.html" >
-                        <img src="./imagens/diario-icone.png" >
-    
+                    <a href="./diario.html">
+                        <img src="./imagens/diario-icone.png">
+
                     </a>
                 </div>
                 <div>
-                    <a href="./financeiro.html" >
-                        <img src="./imagens/financeiro-icone.png" >  
-    
+                    <a href="./financeiro.html">
+                        <img src="./imagens/financeiro-icone.png">
+
                     </a>
                 </div>
                 <div>
-                    <a href="./horario.html" >
-                        <img src="./imagens/horario-icone.png"  >    
+                    <a href="./horario.html">
+                        <img src="./imagens/horario-icone.png">
                     </a>
                 </div>
             </div>
-            <div style="display: none;"  id="menuCompleto" class="menu-revelado" >
-                <div class="" >
-                    <a onclick="menuCover()"  >
-                        <img src="./imagens/menu_toggle.png" >   
-                        <p >Menu</p> 
+            <div style="display: none;" id="menuCompleto" class="menu-revelado">
+                <div class="">
+                    <a onclick="menuCover()">
+                        <img src="./imagens/menu_toggle.png">
+                        <p>Menu</p>
                     </a>
                 </div>
                 <div>
-                    <a href="./boletim.html" >
-                        <img src="./imagens/boletim-icone.png" >
+                    <a href="./boletim.html">
+                        <img src="./imagens/boletim-icone.png">
                         <p>Boletim</p>
                     </a>
                 </div>
                 <div>
-                    <a href="./calendario.html" >
-                        <img src="./imagens/calendario-icone.png" >
+                    <a href="./calendario.html">
+                        <img src="./imagens/calendario-icone.png">
                         <p>Calendário</p>
                     </a>
                 </div>
                 <div>
-                    <a href="./diario.html" >
-                        <img src="./imagens/diario-icone.png" >
+                    <a href="./diario.html">
+                        <img src="./imagens/diario-icone.png">
                         <p>Diário</p>
                     </a>
                 </div>
                 <div>
-                    <a href="./financeiro.html" >
-                        <img src="./imagens/financeiro-icone.png" >  
-                        <p>Financeiro</p>  
+                    <a href="./financeiro.html">
+                        <img src="./imagens/financeiro-icone.png">
+                        <p>Financeiro</p>
                     </a>
                 </div>
                 <div>
-                    <a href="./horario.html" >
-                        <img src="./imagens/horario-icone.png"  >    
+                    <a href="./horario.html">
+                        <img src="./imagens/horario-icone.png">
                         <p>
                             horário
                         </p>
                     </a>
                 </div>
             </div>
-            
+
         </aside>
-    <section>
-        <nav>
-            <a>Inicio ></a>
-            <a>Diário</a>
-        </nav>
-        <div class="ct">
-            <div class="titulo-pagina">
-                <img src="./imagens/diario-icone.png" >
-                <h2>Diário</h2>
-            </div>
-            <div class="cabecalho">
-                <div class="boletim-dados" >
-                    <ul>
-                        <li>
-                            <label>Discente:</label>
-                            <p>Jojo Todynho</p>
-                        </li>
-                        <li>
-                            <label>Matrícula</label>
-                            <p>84209342</p>
-                        </li>
-                    </ul>
-                    <ul>
-    
-                    </ul>
-                    <ul>
-         
-                    </ul>
+        <section>
+            <nav>
+                <a>Inicio ></a>
+                <a>Diário</a>
+            </nav>
+            <div class="ct">
+                <div class="titulo-pagina">
+                    <img src="./imagens/diario-icone.png">
+                    <h2>Diário</h2>
                 </div>
-            </div>
-            <div class="card-g" >
-                <div class="card-g-titulo">
-                    <h5>histologiaII (teorico) </h5>
-                </div>
-                <div class="card-g-corpo" >
-                    <div class="card-g-e" >
-                        <div class="card-g-t">
-                            <h5>informações</h5>
-                        </div>
-                        <div class="card-g-b">
-                            <h5>notas</h5>
-                        </div>
+                <div class="cabecalho">
+                    <div class="boletim-dados">
+                        <ul>
+                            <li>
+                                <label>Discente:</label>
+                                <p>Jojo Todynho</p>
+                            </li>
+                            <li>
+                                <label>Matrícula</label>
+                                <p>84209342</p>
+                            </li>
+                        </ul>
+                        <ul>
+
+                        </ul>
+                        <ul>
+
+                        </ul>
                     </div>
-                    <div class="card-g-d">
-                        <h5>materiais</h5>
-    
-                        <div class="material-item" >
-                            <div class="material-links" >
-                                <div class="links-titulo">Lista de atividade</div>
-                                <ul>
-                                    <li>
-                                        <a href="#" >Download</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" >Link de Apoio</a>
-                                    </li>
-                                </ul>
+                </div>
+                <div class="card-g">
+                    <div class="card-g-titulo">
+                        <h5>histologiaII (teorico) </h5>
+                    </div>
+                    <div class="card-g-corpo">
+                        <div class="card-g-e">
+                            <div class="card-g-t">
+                                <h5>informações</h5>
                             </div>
-                            <div class="material-sobre" >
-                                <div class="links-titulo" >
-                                    Sobre
+                            <div class="card-g-b">
+                                <h5>notas</h5>
+                            </div>
+                        </div>
+                        <div class="card-g-d">
+                            <h5>materiais</h5>
+
+                            <div class="material-item">
+                                <div class="material-links">
+                                    <div class="links-titulo">Lista de atividade</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Download</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Link de Apoio</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <p>
-                                    Atividade avaliativa para conclusão do ensino de histologia
-                                </p>
+                                <div class="material-sobre">
+                                    <div class="links-titulo">
+                                        Sobre
+                                    </div>
+                                    <p>
+                                        Atividade avaliativa para conclusão do ensino de histologia
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</div>
-    <div id="user-box" class="user-box-opc j-1" style="display: none;"  >
-        <div class="user-bloc j-1" >
-        <div class="u-bloc-img j-1">
-            <img class="j-1" src="./imagens/vitao.jpg" >
-        </div>
-        <div class="u-bloc-name j-1">
-            <label class="j-1" >(Nome do Usuário)</label>
-        </div>
-        <div class="u-bloc-menu j-1" > 
-            <a href="./aluno.html" class="j-1" >
-                <img src="./imagens/alunoportal.png" >
-                <label> Página do Aluno</label>
-            </a>
-            <a href="./aluno.html" class="j-1" >
-                <img src="./imagens/entrar.png" >
-                <label> Minha conta</label>
-            </a>
-            <a href="./aluno.html" class="j-1" >
-                <img src="./imagens/sair.png" >
-                <label> Sair</label>
-            </a>
-        </div>
-    </div> 
+        </section>
     </div>
-    <script src="./js/main.js" ></script>
-    <script src="./js/eventos.js" ></script>
+    <div id="user-box" class="user-box-opc j-1" style="display: none;">
+        <div class="user-bloc j-1">
+            <div class="u-bloc-img j-1">
+                <img class="j-1" src="./imagens/vitao.jpg">
+            </div>
+            <div class="u-bloc-name j-1">
+                <label class="j-1">(Nome do Usuário)</label>
+            </div>
+            <div class="u-bloc-menu j-1">
+                <a href="./aluno.html" class="j-1">
+                    <img src="./imagens/alunoportal.png">
+                    <label> Página do Aluno</label>
+                </a>
+                <a href="./aluno.html" class="j-1">
+                    <img src="./imagens/entrar.png">
+                    <label> Minha conta</label>
+                </a>
+                <a href="./aluno.html" class="j-1">
+                    <img src="./imagens/sair.png">
+                    <label> Sair</label>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notificação -->
+    <div id="noti-box" class="user-box-opc noti-box j-2" style="display: none;">
+        <div class="noti-box-titulo">Novidades</div>
+        <a class="noti-item">
+            <label>(Assunto da notificação) </label>
+            <img src="./imagens/atention.png">
+        </a>
+        <a class="noti-item">
+            <label>(Assunto da notificação) </label>
+            <img src="./imagens/atention.png">
+        </a>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/eventos.js"></script>
 </body>
+
 </html>
 </li>

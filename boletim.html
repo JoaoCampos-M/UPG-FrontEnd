@@ -1,253 +1,271 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boletim</title>
     <link rel="stylesheet" href="./css/GlobalStyles.css" />
-    <link rel="stylesheet" href="./css/header.css"/>
-    <link rel="stylesheet" href="./css/aside.css"/>
-    <link rel="stylesheet" href="./css/section.css" >
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/aside.css" />
+    <link rel="stylesheet" href="./css/section.css">
     <link rel="stylesheet" href="./css/table.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
+
 <body>
     <header>
         <div class="logo-upg-header">
-            <img class="logo-upg" src="./imagens/logo.jpeg" >
+            <img class="logo-upg" src="./imagens/logo.jpeg">
         </div>
-        <div class="header-icones"  >
+        <div class="header-icones">
             <a>
-                <img src="./imagens/sino.png" >
+                <img src="./imagens/sino.png">
             </a>
-            <a id="img-user-toggle" class="j-1"  >
-                <img src="./imagens/vitao.jpg" class="j-1" >
+            <a id="img-user-toggle" class="j-1">
+                <img src="./imagens/vitao.jpg" class="j-1">
             </a>
         </div>
-       
+
     </header>
 
 
     <div class="container">
         <aside>
-            <div  id="apenasIcones" class="menu-icones" >
-                <div class="" >
+            <div id="apenasIcones" class="menu-icones">
+                <div class="">
                     <a onclick="revelarMenuAside()">
-                        <img src="./imagens/menu_toggle.png" >   
+                        <img src="./imagens/menu_toggle.png">
                     </a>
                 </div>
                 <div>
-                    <a href="./boletim.html" >
-                        <img src="./imagens/boletim-icone.png" >
-    
+                    <a href="./boletim.html">
+                        <img src="./imagens/boletim-icone.png">
+
                     </a>
                 </div>
                 <div>
-                    <a href="./calendario.html" >
-                        <img src="./imagens/calendario-icone.png" >
-    
+                    <a href="./calendario.html">
+                        <img src="./imagens/calendario-icone.png">
+
                     </a>
                 </div>
                 <div>
-                    <a href="./diario.html" >
-                        <img src="./imagens/diario-icone.png" >
-    
+                    <a href="./diario.html">
+                        <img src="./imagens/diario-icone.png">
+
                     </a>
                 </div>
                 <div>
-                    <a href="./financeiro.html" >
-                        <img src="./imagens/financeiro-icone.png" >  
-    
+                    <a href="./financeiro.html">
+                        <img src="./imagens/financeiro-icone.png">
+
                     </a>
                 </div>
                 <div>
-                    <a href="./horario.html" >
-                        <img src="./imagens/horario-icone.png"  >    
+                    <a href="./horario.html">
+                        <img src="./imagens/horario-icone.png">
                     </a>
                 </div>
             </div>
-            <div style="display: none;"  id="menuCompleto" class="menu-revelado" >
-                <div class="" >
-                    <a onclick="menuCover()"  >
-                        <img src="./imagens/menu_toggle.png" >   
-                        <p >Menu</p> 
+            <div style="display: none;" id="menuCompleto" class="menu-revelado">
+                <div class="">
+                    <a onclick="menuCover()">
+                        <img src="./imagens/menu_toggle.png">
+                        <p>Menu</p>
                     </a>
                 </div>
                 <div>
-                    <a href="./boletim.html" >
-                        <img src="./imagens/boletim-icone.png" >
+                    <a href="./boletim.html">
+                        <img src="./imagens/boletim-icone.png">
                         <p>Boletim</p>
                     </a>
                 </div>
                 <div>
-                    <a href="./calendario.html" >
-                        <img src="./imagens/calendario-icone.png" >
+                    <a href="./calendario.html">
+                        <img src="./imagens/calendario-icone.png">
                         <p>Calendário</p>
                     </a>
                 </div>
                 <div>
-                    <a href="./diario.html" >
-                        <img src="./imagens/diario-icone.png" >
+                    <a href="./diario.html">
+                        <img src="./imagens/diario-icone.png">
                         <p>Diário</p>
                     </a>
                 </div>
                 <div>
-                    <a href="./financeiro.html" >
-                        <img src="./imagens/financeiro-icone.png" >  
-                        <p>Financeiro</p>  
+                    <a href="./financeiro.html">
+                        <img src="./imagens/financeiro-icone.png">
+                        <p>Financeiro</p>
                     </a>
                 </div>
                 <div>
-                    <a href="./horario.html" >
-                        <img src="./imagens/horario-icone.png"  >    
+                    <a href="./horario.html">
+                        <img src="./imagens/horario-icone.png">
                         <p>
                             horário
                         </p>
                     </a>
                 </div>
             </div>
-            
+
         </aside>
-    <section>
-        <nav>
-            <a>Inicio > </a>
-            <a>Boletim</a>
-        </nav>
-        <div class="ct">        <div class="cabecalho">
-            <div class="titulo-pagina">
-                <img src="./imagens/boletim-icone.png" >
-                <h2>Boletim</h2>
+        <section>
+            <nav>
+                <a>Inicio > </a>
+                <a>Boletim</a>
+            </nav>
+            <div class="ct">
+                <div class="cabecalho">
+                    <div class="titulo-pagina">
+                        <img src="./imagens/boletim-icone.png">
+                        <h2>Boletim</h2>
+                    </div>
+                    <div class="boletim-dados">
+                        <ul>
+                            <li>
+                                <label>Discente:</label>
+                                <p>Jojo Todynho</p>
+                            </li>
+                            <li>
+                                <label>Matrícula</label>
+                                <p>84209342</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>N° Disciplinas:</label>
+                                <p>5</p>
+                            </li>
+                            <li>
+                                <label>Matrícula:</label>
+                                <p>
+                                    <select>
+                                        <option>
+                                            2020/2
+                                        </option>
+                                        <option>
+                                            2020/1
+                                        </option>
+
+                                    </select>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>Status:</label>
+                                <p>Matriculado</p>
+                            </li>
+                            <li>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <table id="boletim">
+                    <tr class="tabela-h">
+                        <th style="border-radius: 5px 0px 0px 0px;">Disciplinas</th>
+                        <th>Turma</th>
+                        <th>CH</th>
+                        <th>Faltas</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Nota 3</th>
+                        <th>Nota 4</th>
+                        <th>Media</th>
+                        <th style="border-radius: 0px 5px 0px 0px">Status</th>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr class="tb-preench">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                </table>
+
+                <div class="boletim-medias">
+                    <ul>
+                        <li>
+                            <label>Discente:</label>
+                            <p>Jojo Todynho</p>
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <li>
+                            <label>Matrícula</label>
+                            <p>84209342</p>
+                        </li>
+                    </ul>
+                    <ul>
+
+                    </ul>
+
+                </div>
             </div>
-            <div class="boletim-dados" >
-                <ul>
-                    <li>
-                        <label>Discente:</label>
-                        <p>Jojo Todynho</p>
-                    </li>
-                    <li>
-                        <label>Matrícula</label>
-                        <p>84209342</p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <label>N° Disciplinas:</label>
-                        <p>5</p>
-                    </li>
-                    <li>
-                        <label>Matrícula:</label>
-                        <p>
-                            <select>
-                                <option>
-                                    2020/2
-                                </option>
-                                <option>
-                                    2020/1
-                                </option>
 
-                            </select>
-                        </p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <label>Status:</label>
-                        <p>Matriculado</p>
-                    </li>
-                    <li>
-
-                    </li>
-                </ul>
+        </section>
+    </div>
+    <div id="user-box" class="user-box-opc j-1" style="display: none;">
+        <div class="user-bloc j-1">
+            <div class="u-bloc-img j-1">
+                <img class="j-1" src="./imagens/vitao.jpg">
+            </div>
+            <div class="u-bloc-name j-1">
+                <label class="j-1">(Nome do Usuário)</label>
+            </div>
+            <div class="u-bloc-menu j-1">
+                <a href="./aluno.html" class="j-1">
+                    <img src="./imagens/alunoportal.png">
+                    <label> Página do Aluno</label>
+                </a>
+                <a href="./aluno.html" class="j-1">
+                    <img src="./imagens/entrar.png">
+                    <label> Minha conta</label>
+                </a>
+                <a href="./aluno.html" class="j-1">
+                    <img src="./imagens/sair.png">
+                    <label> Sair</label>
+                </a>
             </div>
         </div>
-        <table id="boletim">
-            <tr class="tabela-h" >
-                <th style="border-radius: 5px 0px 0px 0px;" >Disciplinas</th>
-                <th>Turma</th>
-                <th>CH</th>
-                <th>Faltas</th>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-                <th>Nota 3</th>
-                <th>Nota 4</th>
-                <th>Media</th>
-                <th style="border-radius: 0px 5px 0px 0px" >Status</th>
-            </tr>
-            <tr >
-                <td>asdassdas</td>
-                <td>sd</td>
-                <td>asdasdas</td>
-                <td>asdasdasdasda</td>
-                <td>asdasdlkasjd</td>
-                <td>asdasld</td>
-                <td>dsds</td>
-                <td>asdasdasd</td>
-                <td>asdasd</td>
-                <td>asdas</td>
-            </tr>
-            <tr class="tb-preench" >
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                
-            </tr>
-        </table>
-      
-        <div class="boletim-medias" >
-            <ul>
-                <li>
-                    <label>Discente:</label>
-                    <p>Jojo Todynho</p>
-                </li>
-                
-            </ul>
-            <ul>
-                <li>
-                    <label>Matrícula</label>
-                    <p>84209342</p>
-                </li>
-            </ul>
-            <ul>
+    </div>
 
-            </ul>
-
-        </div></div>
-       
-    </section>
-</div>
-<div id="user-box" class="user-box-opc j-1" style="display: none;"  >
-    <div class="user-bloc j-1" >
-       <div class="u-bloc-img j-1">
-           <img class="j-1" src="./imagens/vitao.jpg" >
-       </div>
-       <div class="u-bloc-name j-1">
-           <label class="j-1" >(Nome do Usuário)</label>
-       </div>
-       <div class="u-bloc-menu j-1" > 
-           <a href="./aluno.html" class="j-1" >
-               <img src="./imagens/alunoportal.png" >
-               <label> Página do Aluno</label>
-           </a>
-           <a href="./aluno.html" class="j-1" >
-               <img src="./imagens/entrar.png" >
-               <label> Minha conta</label>
-           </a>
-           <a href="./aluno.html" class="j-1" >
-               <img src="./imagens/sair.png" >
-               <label> Sair</label>
-           </a>
-       </div>
-   </div> 
-</div>
-    <script src="./js/main.js" ></script>
-    <script src="./js/eventos.js" ></script>
+    <!-- Notificação -->
+    <div id="noti-box" class="user-box-opc noti-box j-2" style="display: none;">
+        <div class="noti-box-titulo">Novidades</div>
+        <a class="noti-item">
+            <label>(Assunto da notificação) </label>
+            <img src="./imagens/atention.png">
+        </a>
+        <a class="noti-item">
+            <label>(Assunto da notificação) </label>
+            <img src="./imagens/atention.png">
+        </a>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/eventos.js"></script>
 </body>
+
 </html>
 </li>
