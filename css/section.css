@@ -159,10 +159,11 @@ section .noticias{
     right: 10px;
     width: 250px;
     height: max-content;
-    top: 45px;
+    top: 48px;
     background-color: white;
     border: 1px solid #c1c1c1;
     border-radius: 5px;
+    box-shadow: 1px 1px 2px gray ;
 }
 .user-bloc{
     border-radius: 5px;
@@ -229,4 +230,37 @@ section .noticias{
 .msg-erro-login p{
     color: red;
     font-size: 0.95rem;
+}
+.noti-box{
+    padding: 8px;
+    margin-right: 20px;
+}
+
+.noti-box .noti-box-titulo{
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.noti-box .noti-item{   
+    border-top: 1px solid #c1c1c1;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 0px;
+;
+}
+
+.noti-box .noti-item label{
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.95rem;
+
+}
+.noti-box .noti-item img {
+    width: auto;
+    padding: 3px 0px;
+    height: 36px;
 }
