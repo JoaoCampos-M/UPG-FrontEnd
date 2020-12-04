@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login no Sistema</title>
     <link rel="stylesheet" href="./css/GlobalStyles.css" />
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/esqSenha.css">
     <link rel="stylesheet" href="./css/header.css"/>
     <link rel="stylesheet" href="./css/section.css" >
     <link rel="stylesheet" href="./css/media.css">
@@ -21,26 +21,28 @@
   <div class="login-cont">
     <form>
         <div class="login-form-img" >
-            <img src="./imagens/login-form.png" > 
+            <img src="./imagens/logo bola.png" > 
         </div>
+        <br>
       <div class="input-field">
         <input type="text" required>
-        <label>Usuario</label>
+        <label>Usuário</label>              
       </div>
+      <div class="infoAdd">
+        	Informe o número de Matrícula ou cfp
+      </div>  
       <div class="input-field">
-        <input class="pswrd" type="password" required>
-        <span class="show">MOSTRAR</span>
-        <label>Senha</label>
+        <input class="pswrd" type="text" required>
+        <label>Email</label>
+                     
       </div>
-      
-      <div class="msg-erro-login" > 
-        <p>Usuário e(ou) senha inválidos</p>
-      </div>
-
+      	<label class="infoAdd">
+        	Informe o Email utilizado no cadastro da instituição
+        </label>   
+        <br><br>
+        <!-- bloco php com javascript para puxar o reCaptcha -->
       <div class="form-buttons">
-        <button>Entrar</button>
-          <p><a href="esqSenha.html">Esqueceu a Senha</a></p>
-
+        <button>Enviar</button>       
       </div>
     </form>
   </div>
