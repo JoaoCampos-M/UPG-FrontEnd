@@ -48,7 +48,7 @@ nav{
 }
 
 nav a.ini{
-    padding: 20px 12px;
+    margin-left: 10px;
     cursor: pointer;
 }
 
