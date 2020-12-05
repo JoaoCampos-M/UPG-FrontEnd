@@ -19,8 +19,8 @@
             <img class="logo-upg" src="./imagens/logo.jpeg">
         </div>
         <div class="header-icones">
-            <a>
-                <img src="./imagens/sino.png">
+            <a id="img-noti-toggle" class="j-2">
+                <img src="./imagens/sino.png" class="j-2">
             </a>
             <a id="img-user-toggle" class="j-1">
                 <img src="./imagens/vitao.jpg" class="j-1">
@@ -115,160 +115,183 @@
                 <a>Horário</a>
             </nav>
             <div class="ct">
-                <div class="titulo-pagina">
-                    <img src="./imagens/horario-icone.jpg">
-                    <h2>Horário</h2>
-                </div>
                 <div class="cabecalho">
-                    <div class="boletim-dados">
-
-                        <ul>
-                            <li>
-                                <label>Semestre:</label>
-                                <p>5</p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
+                    <div class="titulo-pagina">
+                        <div class="bloc-bem-vindo">
+                            <img src="./imagens/horario400.png">
+                            <h2>Horário</h2>
+                        </div>
+                        <div class="card-d-cont">
+                            <div class="card-dados">
+                                <div class="card-d-corpo">
+                                    <div class="boletim-dados">
+                                        <ul>
+                                            <li>
+                                                <label>Discente:</label>
+                                                <p>(Inserir dados aqui)</p>
+                                            </li>
+                                            <li>
+                                                <label>Matrícula</label>
+                                                <p>(Inserir dados aqui)</p>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <label>Semestre:</label>
+                                                <p>5</p>
+                                            </li>
+                
+                                        </ul>
+                                        <ul>
+                
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="usuario-ctrl">
+                        <div class="linha-preench"></div>
+                        <div class="cont-ctrl">
+                            <div class="ctrl-item">
                                 <label>Período:</label>
-                                <p>
-                                    <select>
-                                        <option>
-                                            2020/2
-                                        </option>
-                                        <option>
-                                            2020/1
-                                        </option>
+                                    <p>
+                                        <select>
+                                            <option>
+                                                2020/2
+                                            </option>
+                                            <option>
+                                                2020/1
+                                            </option>
 
-                                    </select>
-                                </p>
-                            </li>
-                        </ul>
-
+                                        </select>
+                                    </p>
+                            </div>
+                            <div class="ctrl-item">
+                                <button class="bt-atualizar" >Atualizar</button>
+                            </div>
+                        </div>
+                        <div class="linha-preench"></div>
                     </div>
                 </div>
-                <table id="boletim">
-                    <tr class="tabela-h">
-                        <th>Hora</th>
-                        <th>seg</th>
-                        <th>ter</th>
-                        <th>qua</th>
-                        <th>qui</th>
-                        <th>sex</th>
-                        <th>sab</th>
-                        <th>dom</th>
-                    </tr>
-                    <tr>
-                        <td class="horario-h">08:00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="horario-h">09:00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="horario-h">10:00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="horario-h">11:00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="horario-h"></td>
-                        <td style="color: white;">.</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="horario-h">13:00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="horario-h">14:00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="horario-h">15:00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="horario-h">16:00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="horario-h">17:00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="horario-h">18:00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
+                <div class="tabela-horário-prof">
+                    <table>
+                        <tbody><tr class="t-h-titulo">
+                            <th>Horário</th>
+                            <th>Dom</th>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                            <th>Sáb</th>
+                        </tr>
+                        <tr>
+                            <td>09:00</td>
+                            <td>
+                                <div>HISTOLOGIA</div>
+                            </td>
+                            <td>
+                                <div>HISTOLOGIA</div>
+                            </td>
+                            <td><div >HISTOLOGIA</div></td>
+                            <td><div>HISTOLOGIA</div></td>
+                            <td><div>HISTOLOGIA</div></td>
+                            <td><div>HISTOLOGIA</div></td>
+                            <td><div>HISTOLOGIA</div></td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td><div>HISTOLOGIA</div></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                            <td><div>HISTOLOGIA</div></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>_</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>14:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>17:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>18:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody></table>
+                </div>
             </div>
 
 
