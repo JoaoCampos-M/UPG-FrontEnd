@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/section.css">
     <link rel="stylesheet" href="./css/table.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/cards.css">
 </head>
 
 <body>
@@ -19,8 +20,8 @@
             <img class="logo-upg" src="./imagens/logo.jpeg">
         </div>
         <div class="header-icones">
-            <a>
-                <img src="./imagens/sino.png">
+            <a id="img-noti-toggle" class="j-2">
+                <img src="./imagens/sino.png" class="j-2">
             </a>
             <a id="img-user-toggle" class="j-1">
                 <img src="./imagens/vitao.jpg" class="j-1">
@@ -118,26 +119,44 @@
             <div class="ct">
                 <div class="cabecalho">
                     <div class="titulo-pagina">
-                        <img src="./imagens/boletim-icone.png">
-                        <h2>Boletim</h2>
+                        <div class="bloc-bem-vindo">
+                            <img src="./imagens/boletim400.png">
+                            <h2>Boletim</h2>
+                        </div>
+                        <div class="card-d-cont">
+                            <div class="card-dados">
+                                <div class="card-d-corpo">
+                                    <div class="boletim-dados">
+                                        <ul>
+                                            <li>
+                                                <label>Discente:</label>
+                                                <p>(Inserir dados aqui)</p>
+                                            </li>
+                                            <li>
+                                                <label>Matrícula</label>
+                                                <p>(Inserir dados aqui)</p>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <label>N° Disciplinas:</label>
+                                                <p>(Inserir dados aqui)</p>
+                                            </li>
+                                            <li>
+                                                <label>Status:</label>
+                                                <p>(Inserir dados aqui)</p>
+                                            </li>
+                                        </ul>
+                                        <ul></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="boletim-dados">
-                        <ul>
-                            <li>
-                                <label>Discente:</label>
-                                <p>Jojo Todynho</p>
-                            </li>
-                            <li>
-                                <label>Matrícula</label>
-                                <p>84209342</p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <label>N° Disciplinas:</label>
-                                <p>5</p>
-                            </li>
-                            <li>
+                    <div class="usuario-ctrl">
+                        <div class="linha-preench"></div>
+                        <div class="cont-ctrl" >
+                            <div class="ctrl-item">
                                 <label>Matrícula:</label>
                                 <p>
                                     <select>
@@ -150,17 +169,12 @@
 
                                     </select>
                                 </p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <label>Status:</label>
-                                <p>Matriculado</p>
-                            </li>
-                            <li>
-
-                            </li>
-                        </ul>
+                            </div>
+                            <div class="ctrl-item">
+                                <button class="bt-atualizar" >Atualizar</button>
+                            </div>
+                        </div>
+                        <div class="linha-preench"></div>
                     </div>
                 </div>
                 <table id="boletim">
@@ -188,33 +202,201 @@
                         <td>asdasd</td>
                         <td>asdas</td>
                     </tr>
-                    <tr class="tb-preench">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
                     </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdassdas</td>
+                        <td>sd</td>
+                        <td>asdasdas</td>
+                        <td>asdasdasdasda</td>
+                        <td>asdasdlkasjd</td>
+                        <td>asdasld</td>
+                        <td>dsds</td>
+                        <td>asdasdasd</td>
+                        <td>asdasd</td>
+                        <td>asdas</td>
+                    </tr>
+
                 </table>
 
                 <div class="boletim-medias">
                     <ul>
                         <li>
-                            <label>Discente:</label>
-                            <p>Jojo Todynho</p>
+                            <label>Média das disciplinas:</label>
+                            <p>(Inserir dados aqui)</p>
                         </li>
 
                     </ul>
                     <ul>
                         <li>
-                            <label>Matrícula</label>
-                            <p>84209342</p>
+                            <label>Coeficiente de rendimento</label>
+                            <p>(Inserir dados aqui)</p>
                         </li>
                     </ul>
                     <ul>
@@ -268,4 +450,3 @@
 </body>
 
 </html>
-</li>
