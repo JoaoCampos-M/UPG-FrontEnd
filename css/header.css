@@ -47,6 +47,11 @@ nav{
     font-weight: bolder;
 }
 
+nav a.ini{
+    padding: 20px 12px;
+    cursor: pointer;
+}
+
 .titulo-pagina{
     display: flex;
     width: 100%;
