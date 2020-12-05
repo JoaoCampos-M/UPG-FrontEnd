@@ -43,6 +43,7 @@ section .noticias{
 
 .boletim-medias{
     display: flex;
+    justify-content: space-between;
 }
 .boletim-medias ul{
     display: flex;
@@ -248,7 +249,6 @@ section .noticias{
     flex-direction: row;
     justify-content: space-between;
     margin: 5px 0px;
-;
 }
 
 .noti-box .noti-item label{
@@ -263,4 +263,100 @@ section .noticias{
     width: auto;
     padding: 3px 0px;
     height: 36px;
+}
+.usuario-ctrl{
+    width: 100%;
+    display: flex;
+}
+
+.usuario-ctrl .cont-ctrl{
+    margin: auto 2%;
+    display: flex;
+}
+.usuario-ctrl .cont-ctrl .ctrl-item{
+    padding: 10px;
+}
+
+
+.usuario-ctrl .linha-preench{
+    margin: auto 0px;
+    height: 2px;
+    width: -webkit-fill-available;
+    background-color: #01514B;
+    border-radius: 2px;
+}
+
+.cont-ctrl .ctrl-item{
+    display: flex;
+    margin: 5px;
+    width: max-content;
+}
+
+.cont-ctrl label{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+.usuario-ctrl select{
+    font-size: 1.2rem;
+    background-color: white;
+    border: 1px solid #01514B;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cont-ctrl p{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ctrl-item .bt-atualizar{
+    background-color: #55BD92;
+    padding: 5px 10px;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bt-atualizar:focus{
+
+    background-color: #01514B;
+}
+
+.card-d-cont{
+    width: 100%;
+}
+.aluno-dados-inicio{
+    width: 85%;
+}
+.card-dados{
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+}
+
+.card-dados .card-d-titulo{
+    font-size: 1.1rem;
+    padding: 10px;
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.card-dados .card-d-corpo{
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+.card-d-corpo label{
+    font-weight: bold;
+    margin-right: 5px;
+}
+.card-d-corpo div div{
+    margin-bottom: 5px;
+    display: flex;
 }

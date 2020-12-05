@@ -94,41 +94,6 @@
     margin-right: 5px;
 }
 
-
-.card-d-cont{
-    width: 100%;
-}
-.aluno-dados-inicio{
-    width: 85%;
-}
-.card-dados{
-    padding: 10px;
-    width: 100%;
-    background-color: white;
-    border: 1px solid #c1c1c1;
-    border-radius: 5px;
-}
-
-.card-dados .card-d-titulo{
-    font-size: 1.1rem;
-    padding: 10px;
-    text-align: left;
-    text-transform: capitalize;
-    font-weight: bold;
-}
-.card-dados .card-d-corpo{
-    font-size: 1rem;
-    padding: 10px 20px;
-}
-.card-d-corpo label{
-    font-weight: bold;
-    margin-right: 5px;
-}
-.card-d-corpo div div{
-    margin-bottom: 5px;
-    display: flex;
-}
-
 .card-turmas{
     padding: 0px 5px;
 
