@@ -2,7 +2,6 @@ table{
     width: 100%;
     padding: 0;
     /* box-shadow: 2px 2px x4px grey; */
-    min-height: 250px;
     background-color: gray;
 }
 table tr.tb-preench{
