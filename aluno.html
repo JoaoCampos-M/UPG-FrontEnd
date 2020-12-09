@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/section.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/cards.css">
-    <style>
+    <style>   
         aside {
             width: 75px;
             position: absolute;
@@ -39,6 +39,12 @@
             height: 80px;
             border-radius: 50%;
         }
+        .card-dados .card-d-corpo{
+            display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+        }
+    
     </style>
     <!--<script type="text/javascript">
         window.onscroll = function(){
@@ -86,7 +92,7 @@
                                     Dados do aluno
                                 </div>
                                 <div class="card-d-corpo">
-                                    <div class="flex-linha">
+                                    <div>
                                         <div>
                                             <label>Discente:</label>
                                             <p>(Inserir dados aqui)</p>
@@ -95,17 +101,18 @@
                                             <label>Matrícula:</label>
                                             <p>(Inserir dados aqui)</p>
                                         </div>
+                                    </div>
+                                    <div>
                                         <div>
                                             <label>Semestre Atual:</label>
                                             <p>(Inserir dados aqui)</p>
                                         </div>
-
-                                    </div>
-                                    <div class="flex-linha">
                                         <div>
                                             <label>Status da Matrícula:</label>
                                             <p>(Inserir dados aqui)</p>
                                         </div>
+                                    </div>
+                                    <div>
                                         <div>
                                             <label>Curso:</label>
                                             <p>(Inserir dados aqui)</p>
@@ -210,7 +217,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="./boletim.html">
+                    <a href="./boletim.php">
                         <img src="./imagens/boletim-icone.png">
 
                     </a>
@@ -247,7 +254,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="./boletim.html">
+                    <a href="./boletim.php">
                         <img src="./imagens/boletim-icone.png">
                         <p>Boletim</p>
                     </a>
