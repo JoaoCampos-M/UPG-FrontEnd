@@ -62,7 +62,6 @@ if(userIcon != undefined){
 }
 */
 
-
 function user_click_out_check(target) {
   var tgClass = target.getAttribute("class");
   if (tgClass == null || tgClass.indexOf("j-1") == -1) {
@@ -79,7 +78,7 @@ function noti_click_out_check(target) {
 }
 
 document.body.onclick = function (event) {
-  console.log("chegou aqui");
+  //console.log("chegou aqui");
   if (achou) {
     user_click_out_check(event.target);
   }
@@ -115,4 +114,45 @@ function msgErroLogin() {
     retomarFocusEfeito(inp1);
     retomarFocusEfeito(inp2);
   }, 1800);
+}
+
+function dadosUserStep() {
+  var dadosgeral = document.querySelector(".dados-geral");
+  transformAnimacaoMostrar(dadosgeral);
+}
+
+function buttonsStepController(elm) {
+  let div = document.querySelector(".linksMinhaConta");
+  let t = div.getElementsByTagName("a").length;
+  let element = div.getElementsByTagName("a");
+  for (let c = 0; c < t; c++) {
+    element[c].style.textDecoration = "none";
+  }
+  stepVerify(elm.getAttribute("class"));
+  elm.style.textDecoration = "underline";
+}
+var step = [];
+step.push(document.querySelector(".dados-geral"));
+step.push(document.querySelector(".dados-endereco"));
+step.push(document.querySelector(".dados-pessoal"));
+function stepVerify(linkClass) {
+
+  if (linkClass == "link-for-general") {
+    transformAnimacaoMostrar(step[0]);
+  } else if (linkClass == "link-for-address") {
+    transformAnimacaoMostrar(step[1]);
+  } else {
+    transformAnimacaoMostrar(step[2]);
+  }
+}
+
+function transformAnimacaoMostrar(elm) {
+  for(c=0;c<=2;c++){
+    step[c].style.display="none";
+  }
+
+  elm.style.display = "block";
+  elm.style.animationDuration = "0.4s";
+  elm.style.animationName = "animacaoTrasformMostrar";
+  elm.style.animationFillMode = "forwards";
 }
