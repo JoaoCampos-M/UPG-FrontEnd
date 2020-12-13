@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta</title>
+    <link rel="stylesheet" href="./css/GlobalStyles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/aside.css" />
+    <link rel="stylesheet" href="./css/section.css" />
+    <link rel="stylesheet" href="./css/dados-us.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <style>
+        .titulo-pagina {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-upg-header">
+            <img class="logo-upg" src="./imagens/logo.jpeg">
+        </div>
+        <div class="header-icones">
+            <a id="img-noti-toggle" class="j-2">
+                <img src="./imagens/sino.png" class="j-2">
+            </a>
+            <a id="img-user-toggle" class="j-1">
+                <img src="./imagens/vitao.jpg" class="j-1">
+            </a>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <section>
+            <nav>
+                <a>Inicio ></a>
+                <a>Página do Aluno ></a>
+                <a>Minha Conta</a>
+            </nav>
+            <div class="ct">
+                <div class="titulo-pagina boas-vindas">
+                    <div class="bloc-bem-vindo">
+                        <img src="./imagens/email.svg">
+                        <h2>Bem vindo,(Nome do Usuário)</h2>
+                    </div>
+                </div>
+                <div class="cabecalho-conta">
+                    <div class="linksMinhaConta">
+                        <a onclick="buttonsStepController(this)" class="link-for-general"
+                            style="text-decoration: underline;">geral</a>
+                        <a onclick="buttonsStepController(this)" class="link-for-address">endereço</a>
+                        <a onclick="buttonsStepController(this)" class="link-for-folks">dados pessoais</a>
+                    </div>
+                </div>
+                <div class="dados-user-cont">
+                    <div class="dados-geral">
+                        <form action="">
+                            <div class="dados-col">
+                                <div class="dados-titulo">
+                                    <h2>Perfil</h2>
+                                </div>
+                                <div class="perfil">
+                                    <img src="./imagens/vitao.jpg">
+                                    <h2>Bem vindo,(Nome do Usuário)</h2>
+                                </div>
+
+                            </div>
+                            <div class="dados-col">
+                                <div class="dados-titulo">
+                                    <h2>Login</h2>
+                                </div>
+                                <div class="login">
+                                    <div class="labels-cont">
+                                        <label>Usuario</label>
+                                        <label>Senha</label>
+                                    </div>
+                                    <div class="inputs-cont">
+                                        <input type="text">
+                                        <input type="password">
+                                        <a>Alterar Senha</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="dados-endereco outros" style="display: none;">
+                        <form>
+                            <div class="dados-col">
+                                <div class="dados-reais">
+                                    <div class="labels-cont larg-min">
+                                        <label>Estado</label>
+                                        <label>Cidade</label>
+                                        <label>CEP</label>
+                                    </div>
+                                    <div class="inputs-cont">
+                                        <input type="text" value="(Dados Aqui)">
+                                        <input type="text" value="(Dados Aqui)">
+                                        <input type="text" value="(Dados Aqui)">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="dados-col">
+                                <div class="dados-reais">
+                                    <div class="labels-cont larg-min ">
+                                        <label>Bairro</label>
+                                        <label>Rua</label>
+                                        <label>N°</label>
+                                    </div>
+                                    <div class="inputs-cont">
+                                        <input type="text" value="(Dados Aqui)">
+                                        <input type="text" value="(Dados Aqui)">
+                                        <input type="text" value="(Dados Aqui)">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </form>
+                        <div class="submit-linha">
+                            <input type="submit" value="editar">
+                            <input type="submit" value="Salvar Alterações">
+                        </div>
+                    </div>
+                    <div class="dados-pessoal outros" style="display: none;">
+                        <form>
+                            <div class="dados-col">
+                                <div class="dados-reais">
+                                    <div class="labels-cont">
+                                        <label>Nome</label>
+                                        <label>Sobrenome</label>
+                                        <label>CPF</label>
+                                        <label>Data de Nascimento</label>
+                                        <label>Nacionalidade</label>
+                                        <label>Sexo</label>
+                                        <label>Gênero</label>
+                                        <label>Nome Fonético</label>
+                                    </div>
+                                    <div class="inputs-cont">
+                                        <input type="text" value="(Dados Aqui)" disabled>
+                                        <input type="text" value="(Dados Aqui)" disabled>
+                                        <input type="text" value="(Dados Aqui)" disabled>
+                                        <input type="date" value="" disabled>
+                                        <select disabled>
+                                            <option>(Dados Aqui))</option>
+                                        </select>
+                                        <select disabled>
+                                            <option>(Dados Aqui)</option>
+                                        </select>
+                                        <input type="text" value="(Dados Aqui)">
+                                        <input type="text" value="(Dados Aqui)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dados-col">
+                                <div class="dados-reais">
+                                    <div class="labels-cont">
+                                        <label>Nome da Mãe</label>
+                                        <label>Nome do Pai</label>
+                                        <label>CPF da Mãe</label>
+                                        <label>CPF do Pai</label>
+                                        <label>Tel de Emergência</label>
+                                    </div>
+                                    <div class="inputs-cont">
+                                        <input type="text" value="(Dados Aqui)" disabled>
+                                        <input type="text" value="(Dados Aqui)" disabled>
+                                        <input type="text" value="(Dados Aqui)" disabled>
+                                        <input type="text" value="(Dados Aqui)" disabled>
+                                        <input type="text" value="(Dados Aqui)">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="submit-linha">
+                            <input type="submit" value="editar">
+                            <input type="submit" value="Salvar Alterações">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="user-box" class="user-box-opc j-1" style="display: none;">
+        <div class="user-bloc j-1">
+            <div class="u-bloc-img j-1">
+                <img class="j-1" src="./imagens/vitao.jpg">
+            </div>
+            <div class="u-bloc-name j-1">
+                <label class="j-1">(Nome do Usuário)</label>
+            </div>
+            <div class="u-bloc-menu j-1">
+                <a href="./aluno.html" class="j-1">
+                    <img src="./imagens/teacher.png">
+                    <label> Página do Aluno</label>
+                </a>
+                <a href="./aluno.html" class="j-1">
+                    <img src="./imagens/entrar.png">
+                    <label> Minha conta</label>
+                </a>
+                <a href="./aluno.html" class="j-1">
+                    <img src="./imagens/sair.png">
+                    <label> Sair</label>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Notificação -->
+    <div id="noti-box" class="user-box-opc noti-box j-2" style="display: none;">
+        <div class="noti-box-titulo">Novidades</div>
+        <a class="noti-item">
+            <label>(Assunto da notificação) </label>
+            <img src="./imagens/atention.png">
+        </a>
+        <a class="noti-item">
+            <label>(Assunto da notificação) </label>
+            <img src="./imagens/atention.png">
+        </a>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/eventos.js"></script>
+</body>
+
+</html>
+</li>
