@@ -24,6 +24,7 @@ body {
 }
 
 a{
+  cursor: pointer;
   text-decoration: none;
   color: black;
 }
@@ -55,9 +56,40 @@ div.container{
 a:hover{
   text-decoration: none;
 }
+input{ 
+  cursor: pointer;
+}
+
+input[type="text"]:disabled,input[type="email"]:disabled,input[type="date"]:disabled{
+  cursor: default;
+  color: gray;
+  /* background-color: lightgray; */
+  background-color: white;
+}
+
+select:disabled{
+  cursor: default;
+  color: gray;
+  background-color: white;
+}
+select{
+  cursor: pointer;
+  background-color: white;
+}
 
 .flex-linha{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@keyframes animacaoTrasformMostrar{
+  from{
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
