@@ -1,6 +1,6 @@
 @media (max-width: 575.98px) {
     div.container{
-        margin-top: 50px;
+        margin-top: 115px;
     } 
     #carouselExampleFade{
         height: 50%;
@@ -12,49 +12,28 @@
 
     /* HOME NAVBAR */
     nav.home-navbar{
-        background-color: rgba(1, 81, 75, 0.9);
-        width:70%;
-        height: -webkit-fill-available;
-        display: none;
-        padding: 0;
-    }
-    .menu-nav-mobile{
-        /* background-color:white; */
-        width: 48px;
-        height: 48px;
-        position: absolute;
-        z-index:3;
-        padding: 5px;
-        border-radius: 50%;
-        margin-top:50px;
-    }
-    nav.home-navbar .fechar-nav{
-        display: flex;
-        justify-content: flex-end;
-        color: white;
-        padding: 0px 10px;
-        /* background-color: red; */
-        width: 100%;
-        font-size: 2rem;
-        height: 20px;
+        /* background-color: rgba(1, 81, 75, 0.9); */
+        /* width:70%; */
+        /* height: -webkit-fill-available; */
+        display: block;
+        /* padding: 0; */
+        padding-left:2px ;
+        padding-right: 2px;
     }
     nav.home-navbar ul{
-        flex-direction: column;
-        justify-content: center;
+        /* flex-direction: column; */
+        justify-content: space-between;
     }
     nav.home-navbar ul li{
-        margin: 20px auto;
-        padding: 2px 6px;
+        padding: 0px 3px;
         border-left: none;
 /*         border: 1px solid white; */
-        border-radius:5px;
-        /* border-bottom: 1px solid gray; */
+        border-bottom: 1px solid gray;
 
     }
     nav.home-navbar ul li p, nav.home-navbar ul li label{
-        font-size: 1.3rem;
-        color:white;
-
+        font-size: 1rem;
+        /* color:white; */
     }
     .noticias .noticias-fila{
         display: none;
