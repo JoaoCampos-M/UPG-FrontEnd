@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./css/GlobalStyles.css" />
 
     <link rel="stylesheet" href="./css/section.css" >
-    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/noticias.css">
     <link rel="stylesheet" href="./css/header.css"/>
+    <link rel="stylesheet" href="./css/media.css">
     <style>
         body{
             overflow-Y: scroll;
@@ -18,9 +18,7 @@
         div.container{
             display: block;
             width: 100%;
-            margin:0;
             padding: 0;
-            margin-top:115px;
         }
             
         header a{
@@ -29,11 +27,11 @@
             background-color: white;
             border: none;
        /* Alinha a verticalmente no centro do header*/ 
-            margin: auto 20px;
+            margin: auto 15px;
             padding: 0px;
             display: flex;
             justify-content: space-between;
-            width: 150px;
+            width: auto;
             
         }
     </style>
@@ -50,8 +48,17 @@
         </a>
         
     </header>
+    <img class="menu-nav-mobile" src="./imagens/menu_toggle.png" >
     <nav class="home-navbar" >
+        <a class="fechar-nav" >
+            <p>x</p>
+        </a>
         <ul>
+            <li>
+                
+                   <label> Navegue Para:</label>
+                
+            </li>
             <li>
                 <a href="#" >
                     <p>Como </p> <label> ingressar</label>

@@ -1,6 +1,60 @@
-@media(max-width:720px){
+@media (max-width: 575.98px) {
+    div.container{
+        margin-top: 50px;
+    } 
+    #carouselExampleFade{
+        height: 50%;
+    }
     nav{
         display: none;
+    }
+
+
+    /* HOME NAVBAR */
+    nav.home-navbar{
+        background-color: rgba(1, 81, 75, 0.9);
+        width:70%;
+        height: -webkit-fill-available;
+        display: none;
+        padding: 0;
+    }
+    .menu-nav-mobile{
+        /* background-color:white; */
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        z-index:3;
+        padding: 5px;
+        border-radius: 50%;
+        margin-top:50px;
+    }
+    nav.home-navbar .fechar-nav{
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        padding: 0px 10px;
+        /* background-color: red; */
+        width: 100%;
+        font-size: 2rem;
+        height: 20px;
+    }
+    nav.home-navbar ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav.home-navbar ul li{
+        margin: 20px auto;
+        padding: 2px 6px;
+        border-left: none;
+/*         border: 1px solid white; */
+        border-radius:5px;
+        /* border-bottom: 1px solid gray; */
+
+    }
+    nav.home-navbar ul li p, nav.home-navbar ul li label{
+        font-size: 1.3rem;
+        color:white;
+
     }
     .noticias .noticias-fila{
         display: none;
@@ -17,4 +71,19 @@
     .mob{
         display: none;
     }
+ }
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    
 }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+ }
