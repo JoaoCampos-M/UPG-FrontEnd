@@ -16,7 +16,7 @@
     <style>   
         aside {
             width: 75px;
-            position: absolute;
+            z-index: 3;
             left: 0px;
         }
 
@@ -75,7 +75,85 @@
 
 
     <div class="container">
+        <aside>
+            <div id="apenasIcones" class="menu-icones">
+                <div class="">
+                    <a onclick="revelarMenuAside()">
+                        <img src="./imagens/menu_toggle.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="./boletim.php">
+                        <img src="./imagens/boletim-icone.png">
 
+                    </a>
+                </div>
+                <div>
+                    <a href="./calendario.html">
+                        <img src="./imagens/calendario-icone.png">
+
+                    </a>
+                </div>
+                <div>
+                    <a href="./diario.html">
+                        <img src="./imagens/diario-icone.png">
+
+                    </a>
+                </div>
+                <div>
+                    <a href="./financeiro.html">
+                        <img src="./imagens/financeiro-icone.png">
+
+                    </a>
+                </div>
+                <div>
+                    <a href="./horario.html">
+                        <img src="./imagens/horario-icone.png">
+                    </a>
+                </div>
+            </div>
+            <div style="display: none;" id="menuCompleto" class="menu-revelado">
+                <div class="">
+                    <a onclick="menuCover()">
+                        <img src="./imagens/menu_toggle.png">
+                        <p>Menu</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="./boletim.php">
+                        <img src="./imagens/boletim-icone.png">
+                        <p>Boletim</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="./calendario.html">
+                        <img src="./imagens/calendario-icone.png">
+                        <p>Calendário</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="./diario.html">
+                        <img src="./imagens/diario-icone.png">
+                        <p>Diário</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="./financeiro.html">
+                        <img src="./imagens/financeiro-icone.png">
+                        <p>Financeiro</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="./horario.html">
+                        <img src="./imagens/horario-icone.png">
+                        <p>
+                            horário
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+        </aside>
         <section onscroll="debug(event)">
             <nav>
                 <a>Inicio > </a>
@@ -216,85 +294,7 @@
             </div>
 
         </section>
-        <aside>
-            <div id="apenasIcones" class="menu-icones">
-                <div class="">
-                    <a onclick="revelarMenuAside()">
-                        <img src="./imagens/menu_toggle.png">
-                    </a>
-                </div>
-                <div>
-                    <a href="./boletim.php">
-                        <img src="./imagens/boletim-icone.png">
 
-                    </a>
-                </div>
-                <div>
-                    <a href="./calendario.html">
-                        <img src="./imagens/calendario-icone.png">
-
-                    </a>
-                </div>
-                <div>
-                    <a href="./diario.html">
-                        <img src="./imagens/diario-icone.png">
-
-                    </a>
-                </div>
-                <div>
-                    <a href="./financeiro.html">
-                        <img src="./imagens/financeiro-icone.png">
-
-                    </a>
-                </div>
-                <div>
-                    <a href="./horario.html">
-                        <img src="./imagens/horario-icone.png">
-                    </a>
-                </div>
-            </div>
-            <div style="display: none;" id="menuCompleto" class="menu-revelado">
-                <div class="">
-                    <a onclick="menuCover()">
-                        <img src="./imagens/menu_toggle.png">
-                        <p>Menu</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="./boletim.php">
-                        <img src="./imagens/boletim-icone.png">
-                        <p>Boletim</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="./calendario.html">
-                        <img src="./imagens/calendario-icone.png">
-                        <p>Calendário</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="./diario.html">
-                        <img src="./imagens/diario-icone.png">
-                        <p>Diário</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="./financeiro.html">
-                        <img src="./imagens/financeiro-icone.png">
-                        <p>Financeiro</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="./horario.html">
-                        <img src="./imagens/horario-icone.png">
-                        <p>
-                            horário
-                        </p>
-                    </a>
-                </div>
-            </div>
-
-        </aside>
         <div class="menu-mobile mob" style="display: none;">
             <div class="icones-mob">
                 <div>
