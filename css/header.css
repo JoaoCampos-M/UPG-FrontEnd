@@ -39,7 +39,8 @@ header a img{
 header a p{
     text-align: justify;
     text-transform: uppercase;
-    margin: auto 8px;
+    margin: auto 8px auto 0px;
+    align-content: left;
 }
 
 nav{

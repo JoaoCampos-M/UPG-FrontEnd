@@ -33,8 +33,159 @@
             padding: 0px;
             display: flex;
             justify-content: space-between;
-            width: 150px;
-            
+            width: 110px;
+        }
+        .tree-link{
+            float: left;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: #383535;
+            margin-left: 9%;
+            margin-top: 10px;
+        }
+        .menu-topics{
+            margin: 10px auto;
+            width: 70%;
+            background-color: white;
+            border-bottom: 1px solid rgba(165, 165, 177, 0.5);
+            display: flex;
+        }
+        .home-topics{
+            padding: 0px 10px 10px 10px;
+        }
+        .home-topics h4, p{
+            text-align: center;
+            font-family: Roboto;
+        }
+        .home-topics h4{
+            margin-bottom: 10px;
+        }
+        .home-topics img{
+            margin: 0px auto;
+        }
+        #border-topics{
+            border-right: 1px solid rgba(165, 165, 177, 0.5);
+            border-left: 1px solid rgba(165, 165, 177, 0.5);
+        }
+        .home-esp{
+            background: rgba(165, 165, 177, 0.3);
+        }
+        .home-contaner{
+            padding: 20px 150px;            
+        }
+        .home-Title{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            /* identical to box height */
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .home-subTitle{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #01514B;
+            margin-top: 20px;
+        }
+        .home-cards{
+            width: 504px;
+            height: 155px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .home-line-cards{
+            display: flex;
+        }
+        .home-img-cards{
+            width: 64px;
+            height: 64px;
+            left: -32px;
+            top: 46px;
+            position: relative;
+        }
+        .motiv-conts{
+            width: 85%;
+            margin: 0px auto;
+        }
+        .motiv-conts h2 {
+            text-align: center;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 35px;
+            align-items: center;
+            color: #01514B;
+            position: relative;
+            top: 30px;
+        }
+        .motiv-conts-text{
+            width: 50%;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: justify;
+            padding: 40px;
+            text-indent: 65px;
+        }
+        .motiv-conts-flex{
+            display: flex;
+            margin: 50px 0px    ;
+        }
+        .motiv-conts-text-r{
+            display: flex;            
+        }
+        .motiv-conts-center{
+            width: 80%;
+            margin: 40px auto 0px auto;
+        }    
+        .motiv-conts-center img {
+                            
+        }
+        .home-footer{
+            background: #686565;
+            color: white;
+            display: flex;            
+        }
+        .home-footer-flex{ 
+            width:30%;    
+        }
+        .home-footer-flex h4{
+            margin-top: 10px;            
+        }
+        .home-footer-center{
+            width: 90%;
+            margin: 0px auto;
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .home-footer-center ul, li {
+            list-style: none;
+            font-family: Roboto;
+            font-style: normal;
+            font-size: 18px;
+            align-items: center;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+        .home-footer-center ul, li > img{
+            margin-right: 5px;
         }
     </style>
 </head>
@@ -51,10 +202,11 @@
         
     </header>
     <nav class="home-navbar" >
+        <div class="tree-link"><a href=".\index.html">Inicio</a></div>
         <ul>
             <li>
                 <a href="#" >
-                    <p>Como </p> <label> ingressar</label>
+                    <p>Como </p> <label> Ingressar</label>
                 </a>
             </li>
             <li>
@@ -64,12 +216,12 @@
             </li>
             <li>
                 <a href="#" >
-                    <p>Central de </p> <label>atendimento</label>
+                    <p>Central de </p> <label>Atendimento</label>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <p>Nossas </p> <label>redes sociais</label>
+                    <p>Nossas </p> <label>Redes Sociais</label>
                 </a>
             </li>
         </ul>
@@ -96,6 +248,79 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
             </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="menu-topics">
+            <div class="home-topics">
+                <center><img src=".\imagens\Certificado.svg" width="50px"></center>                
+                <h4>#TOPICO1</h4>
+                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</p>
+            </div>
+            <div class="home-topics" id="border-topics">
+             <center><img src=".\imagens\Certificado.svg" width="50px"></center>
+                <h4>#TOPICO2</h4>
+                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</p>
+            </div>
+            <div class="home-topics">
+             <center><img src=".\imagens\Certificado.svg" width="50px"></center>
+                <h4>#TOPICO3</h4>
+                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</p>
+            </div>
+        </div>
+        <br>
+        <div class="home-sobre" > 
+            <h2>Frase de Efeito</h2>
+            <p>
+               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="motiv-conts">
+            <h2>Motivos Para Estudar Na UPG</h2>
+            <div class="motiv-conts-flex">
+                <div class="motiv-conts-text"> 
+                    <br>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscin g elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                    </p>   
+                </div>
+                <div class="motiv-conts-text-r">
+                    <div class="motiv-conts-center">
+                        <img src=".\imagens\Certificado.svg" width="150px">
+                        <img src=".\imagens\Certificado.svg" width="150px">                                  
+                    </div>
+                    <div class="motiv-conts-center">
+                        <img src=".\imagens\Certificado.svg" width="150px">
+                        <img src=".\imagens\Certificado.svg" width="150px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-esp" > 
+            <div class="home-contaner">
+                <p class="home-Title">Nossos Alunos</p>
+                <p class="home-subTitle">Experiência com quem já estudou com a gente.</p>            
+                <div class="home-line-cards">
+                    <div class="home-cards">                        
+                        <div>
+                            <img src=".\imagens\logo bola.png" class="home-img-cards" >  
+                        </div>              
+                        <p>teste</p>           
+                    </div>
+                    <div class="home-cards" style="margin-left: 40px;">
+                        <img src=".\imagens\logo bola.png" class="home-img-cards" >  
+                        <p>teste</p> 
+                    </div>                   
+                </div>
+                <div class="home-line-cards">
+                    <div class="home-cards">
+                        <img src=".\imagens\logo bola.png" class="home-img-cards" >  
+                        <p>teste</p>   
+                    </div>
+                </div>
+            </div>
         </div>
 
         <br>
@@ -149,25 +374,49 @@
                 </a>
               </div>
         </div>
-        <div class="home-sobre" > 
-            <h2>Sobre nós</h2>
-            <p>
-                Flexibilidade para as datas de pagamentos das mensalidade. 1ª Universidade
-                 no país em tecnologia digital ( Lousas interativas touch screen). Corpo docente
-                 composto por Doutores aprovados no Revalida e mestres com alta capacitação
-                 e especialização em suas áreas de atuação, contribuindo para o desenvolvimento 
-                 das atividades pedagógicas e científicas da instituição. Os mais completos e
-                 modernos laboratórios de Anatomia (morgue), Histologia, Fisiopatia, Microbiologia,
-                 Bioquímica, Informática e Biblioteca. Mais de 45 filiais em todo país, 25 anos de
-                 fundação e com mais de 5 mil diplomas entregues torna a a UPG uma das universidades
-                 de maior credibilidade no Paraguai. 
-            </p>
-        </div>
-        
-
-
-    </div>
-
+        <div class="home-footer"> 
+            <div class="home-footer-center">
+                <div class="home-footer-flex">
+                    <h4>Endereço</h4>
+                    <br>
+                    <ul>                        
+                        <li>
+                            <img src=".\imagens\Local.svg" width="30px">
+                            Velha nos Visitar
+                        </li>
+                    </ul>
+                </div>
+                <div class="home-footer-flex">
+                    <h4>Nossas Redes Sociais</h4>
+                    <br>
+                    <ul>
+                        <li>
+                            <img src=".\imagens\Facebook.svg" width="30px">
+                            Curta o nosso Facebook
+                        </li>
+                        <li>
+                            <img src=".\imagens\Instagram.svg" width="30px">
+                            Siga Nossa Página
+                        </li>
+                    </ul>
+                </div>
+                <div class="home-footer-flex">
+                    <h4>Contatos</h4>
+                    <br>
+                    <ul>
+                        <li>
+                            <img src=".\imagens\email.svg" width="30px">
+                            email: medicinapjcupg@gmail.com
+                        </li>
+                        <li>
+                            <img src=".\imagens\Whatsapp.svg" width="30px">
+                            Whatssap: (65) 9 91234-5678
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+    </div>    
 
    
     <script src="./js/jquery-3.5.1.slim.min.js" ></script>
